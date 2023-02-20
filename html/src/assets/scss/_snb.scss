@@ -1,0 +1,231 @@
+/**
+ * ==============================+
+ * Side Navigation Bar
+ * ==============================+
+ */
+
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  background-color: $darkGray;
+  border-radius: 0 50px 50px 0;
+  padding: 30px 0;
+  z-index: 99;
+
+  .side-header {
+    padding: 0 60px;
+
+    h1 {
+      letter-spacing: 0.7px;
+      color: $softGray;
+      font-size: 1.3rem;
+      line-height: 1;
+
+      * {
+        line-height: 1.4;
+      }
+
+      span {
+        &:nth-of-type(2) {
+          letter-spacing: -0.5px;
+        }
+      }
+
+      strong {
+        color: $white;
+        vertical-align: top;
+        font-size: 1.4rem;
+      }
+    }
+
+    .user {
+      padding: 20px 0;
+      text-align: center;
+
+      * {
+        display: inline-block;
+      }
+
+      .user-thumb {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .user-name {
+        color: $white;
+      }
+
+      .sign-out {
+        font-size: 0;
+        em {
+          display: inline-block;
+          position: relative;
+          padding-left: 17px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .side-mid {
+    max-height: -webkit-calc(100% - 342px);
+    max-height: -moz-calc(100% - 342px);
+    max-height: calc(100% - 342px);
+    padding: 0 20px;
+
+    .main-menu {
+      padding: 0 0 35px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        right: -20px;
+        background-color: $darkGray2;
+        height: 1px;
+        content: '';
+      }
+
+      ul {
+        li {
+          a {
+            display: block;
+            padding-left: 40px;
+            line-height: 50px;
+            border-radius: 15px;
+            font-size: 0;
+            @include transition(all 0.3s ease-in-out);
+
+            span {
+              display: inline-block;
+              padding-left: 25px;
+              position: relative;
+              color: $gray2;
+              line-height: 1;
+              font-size: 1.6rem;
+            }
+
+            &:hover,
+            &:focus {
+              background-color: $green;
+
+              span {
+                color: $white;
+
+                .icon-add {
+                  @include icon-add--hover;
+                }
+                .icon-map {
+                  @include icon-map--hover;
+                }
+                .icon-pub {
+                  @include icon-pub--hover;
+                }
+                .icon-build {
+                  @include icon-build--hover;
+                }
+                .icon-refresh {
+                  @include icon-refresh--hover;
+                }
+              }
+            }
+          }
+
+          &.on {
+            a {
+              background-color: $green;
+
+              span {
+                color: $white;
+
+                .icon-add {
+                  @include icon-add--hover;
+                }
+                .icon-map {
+                  @include icon-map--hover;
+                }
+                .icon-pub {
+                  @include icon-pub--hover;
+                }
+                .icon-build {
+                  @include icon-build--hover;
+                }
+                .icon-refresh {
+                  @include icon-refresh--hover;
+                }
+              }
+            }
+          }
+          & + li {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      padding: 35px 0 0;
+
+      ul {
+        li {
+          a {
+            display: block;
+            padding-left: 40px;
+            line-height: 50px;
+            border-radius: 15px;
+            color: $gray2;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover,
+            &:focus {
+              background-color: $green;
+              color: $white;
+            }
+          }
+
+          &.on {
+            a {
+              background-color: $green;
+              color: $white;
+            }
+          }
+
+          & + li {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .side-footer {
+    padding: 20px 20px 0;
+
+    .qna {
+      width: 100%;
+      line-height: 45px;
+      border-radius: 10px;
+      background-color: $darkGray3;
+      position: relative;
+      margin-bottom: 30px;
+
+      .f-icon {
+        left: 18px;
+        top: -7px;
+        @include transform(translateY(0));
+      }
+
+      & + span {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+    }
+  }
+}

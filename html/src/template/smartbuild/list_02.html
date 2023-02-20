@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('../include/head.html')
+
+    <title>스마트빌드 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+
+    @@include('../include/header_sub.html')
+  </head>
+  <body>
+    @@include('../include/skipNav.html')
+
+    <!-- SNB -->
+    @@include('../include/snb.html')
+
+    <!-- 본문 -->
+    <!-- S #container -->
+    <main id="container">
+      <div class="inner">
+        <!-- 타이틀 -->
+        <header class="heading-title-Wrap">
+          <h2>
+            <i class="icon icon-build--tit"></i>
+            &nbsp;스마트빌드
+          </h2>
+          <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
+        </header>
+
+        <div class="contents">
+          <!-- 탭 메뉴 -->
+          <ul class="tab-menu">
+            <li><a href="list_01.html">컨퍼런스</a></li>
+            <li class="active"><a href="list_02.html">전시</a></li>
+          </ul>
+
+          <!-- 검색 -->
+          <div class="form-wrap">
+            <dl class="table">
+              <dt>선택</dt>
+              <dd>
+                <div class="radio-wrap">
+                  <span>
+                    <input type="radio" name="a" id="Chk-a1" checked />
+                    <label for="Chk-a1">디지털 트윈</label>
+                  </span>
+                  <span>
+                    <input type="radio" name="a" id="Chk-a2" />
+                    <label for="Chk-a2">가상 컨벤션</label>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt>장소</dt>
+              <dd>
+                <div class="select-wrap">
+                  <select class="wide" title="장소 선택" name="" id="">
+                    <option value="default" disabled selected>장소를 선택해주세요</option>
+                    <option value="a">장소1</option>
+                    <option value="b">장소2</option>
+                  </select>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt>인원</dt>
+              <dd>
+                <div class="select-wrap">
+                  <select class="wide" title="인원 선택" name="" id="">
+                    <option value="default" disabled selected>인원 선택해주세요</option>
+                    <option value="all">전체</option>
+                    <option value="300">300</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                  </select>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <span>전시 부스 스타일</span>
+                <div class="toolTipBox tipInfo2 _hover" tabindex="0">
+                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                  @@include('../include/tooltip6.html')
+                </div>
+              </dt>
+              <dd class="wide">
+                <div class="radio-list-wrap">
+                  <span>
+                    <input type="radio" name="tableStyle" id="Chk-t1" checked />
+                    <label for="Chk-t1"><em>전체</em></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="tableStyle" id="Chk-t2" />
+                    <label for="Chk-t2"><em>믹스부스 자동배치</em></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="tableStyle" id="Chk-t3" />
+                    <label for="Chk-t3"><em>소형부스 자동배치</em></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="tableStyle" id="Chk-t4" />
+                    <label for="Chk-t4"><em>중형부스 자동배치</em></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="tableStyle" id="Chk-t5" />
+                    <label for="Chk-t5"><em>부스자동배치 없음</em></label>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+            <div class="btn-wrapper">
+              <button type="button"><em>초기화</em></button>
+              <button type="button" class="btn-green"><em>검색</em></button>
+            </div>
+          </div>
+
+          <!-- 목록 -->
+          <p class="txt-info">
+            <i class="icon icon-notice"></i>&nbsp; <b>디지털 트윈 &gt; 컨퍼런스</b> 행사의 스마트 조건에 부함하는 <b>3</b>건의
+            컨벤션 센터가 조회되었습니다.
+          </p>
+          <ul class="grid-wrap col-5">
+            @@include('../include/smartBuild-list.html')
+          </ul>
+
+          <!-- 모달 -->
+
+          <!-- 새로운 공간 이름 작성 -->
+          <div class="modal type2 animate fast zoomOut" id="modal-areaNameUpdate">
+            <div class="modal-header">
+              <h4>
+                <span>새로운 공간 이름 작성</span>
+              </h4>
+            </div>
+            <div class="modal-body">
+              <div class="modal-contents">
+                <label for="map-name">공간 이름</label>
+                <span class="txt-byte">
+                  <input id="map-name" type="text" value="Kintex_beautycon_005" />
+                  <em>(20&#47;40)</em>
+                </span>
+              </div>
+              <div class="btn-wrapper col-2">
+                <button type="button" class="btn-close-modal"><em>취소</em></button>
+                <button type="button" class="btn-green btn-active-modal" data-modal-name="createNewArea"><em>확인</em></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 새로운 공간 생성 -->
+          <div class="modal animate fast zoomOut" id="modal-createNewArea">
+            <div class="modal-header">
+              <h4>
+                <span class="hidden-txt">새로운 맵 생성</span>
+                <i class="icon icon-notice--hover-2x"></i>
+              </h4>
+            </div>
+            <div class="modal-body">
+              <div class="modal-contents">
+                <strong>
+                  새로운 공간이 생성되었습니다.<br />
+                  마이맵 메뉴에서 확인 할 수 있습니다.
+                </strong>
+              </div>
+              <div class="btn-wrapper col-2">
+                <button type="button" class="btn-green btn-close-modal"><em>확인</em></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('../include/btnManual.html')
+    </main>
+    <!-- E #container -->
+  </body>
+</html>

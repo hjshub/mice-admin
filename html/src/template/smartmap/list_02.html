@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('../include/head.html')
+
+    <title>스마트맵 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+
+    @@include('../include/header_sub.html')
+  </head>
+  <body>
+    @@include('../include/skipNav.html')
+
+    <!-- SNB -->
+    @@include('../include/snb.html')
+
+    <!-- 본문 -->
+    <!-- S #container -->
+    <main id="container">
+      <div class="inner">
+        <!-- 타이틀 -->
+        <header class="heading-title-Wrap">
+          <h2>
+            <i class="icon icon-refresh--tit"></i>
+            &nbsp;스마트맵
+          </h2>
+          <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
+        </header>
+
+        <div class="breadCrumb">
+          <ul>
+            <li><a href="">퍼블리싱</a></li>
+            <li><a href="">공간 이름</a></li>
+            <li><a href="">스마트맵</a></li>
+          </ul>
+        </div>
+
+        <div class="contents">
+          <!-- 탭 메뉴 -->
+          <ul class="tab-menu">
+            <li><a href="list_01.html">스마트맵</a></li>
+            <li class="active"><a href="list_02.html">장소 찾기 관리</a></li>
+          </ul>
+
+          <!-- 검색 -->
+          <div class="form-wrap">
+            <dl class="table">
+              <dt>행사 선택</dt>
+              <dd>
+                <div class="select-wrap">
+                  <select class="wide" title="장소 선택" name="" id="">
+                    <option value="default" disabled selected>행사를 선택해주세요</option>
+                    <option value="a">행사1</option>
+                    <option value="b">행사2</option>
+                  </select>
+                </div>
+              </dd>
+            </dl>
+          </div>
+
+          <div class="form-wrap list">
+            <dl class="table">
+              <dt>기업명</dt>
+              <dd>
+                <div class="txt-box">
+                  <span>기업 텔레포트지점 이름</span>
+                  <div class="toolTipBox tipInfo2 _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    @@include('../include/tooltip7.html')
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_01">구글</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_01" value="#Google" />
+                  <p>#Google</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_02">스포티파이</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_02" value="#Spotify" />
+                  <p>#Spotify</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_03">인스타그램</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_03" value="#Instargram" />
+                  <p>#Instargram</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_04">트위터</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_04" value="#Twitter" />
+                  <p>#Twitter</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_05">넷플릭스</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_05" value="#Netflix" />
+                  <p>#Netflix</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_06">스냅쳇</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_06" value="#Sanpchat" />
+                  <p>#Sanpchat</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_07">마이크로소프트</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_07" value="#Microsoft" />
+                  <p>#Microsoft</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt><label for="list_08">페이스북</label></dt>
+              <dd>
+                <div class="text-wrap sm input">
+                  <input type="text" id="list_08" value="#Facebook" />
+                  <p>#Facebook</p>
+                </div>
+              </dd>
+            </dl>
+          </div>
+
+          <div class="btn-wrapper align-r">
+            <button type="button" class="btn-green"><em>저장</em></button>
+          </div>
+        </div>
+      </div>
+      @@include('../include/btnManual.html')
+    </main>
+    <!-- E #container -->
+  </body>
+</html>

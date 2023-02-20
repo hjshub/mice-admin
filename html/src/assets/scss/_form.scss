@@ -1,0 +1,338 @@
+/**
+ * ==============================+
+ * form style
+ * ==============================+
+ */
+
+button {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.btn-wrapper {
+  font-size: 0;
+  text-align: center;
+
+  button {
+    display: inline-block;
+    line-height: 50px;
+    min-width: 190px;
+    padding: 0 20px;
+    background-color: $gray3;
+    border-radius: 10px;
+
+    &.btn-green {
+      background-color: $green;
+    }
+
+    em {
+      font-size: 1.6rem;
+      color: $white;
+    }
+
+    & + button {
+      margin-left: 10px;
+    }
+  }
+
+  &.col-2 {
+    button {
+      width: 49%;
+
+      & + button {
+        margin-left: 2%;
+      }
+    }
+  }
+}
+
+/*radio*/
+.radio-wrap {
+  span {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    color: $white;
+
+    input[type='radio'] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 0;
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+
+      & + label {
+        display: inline-block;
+        padding-left: 30px;
+        height: 20px;
+        vertical-align: top;
+        line-height: 1;
+        font-size: 1.6rem;
+
+        &::before {
+          position: absolute;
+          left: 5px;
+          top: 5px;
+          width: 8px;
+          height: 8px;
+          border: none;
+          border-radius: 50%;
+          background-color: $green;
+          z-index: 1;
+        }
+
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 18px;
+          height: 18px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: $gray2;
+          border-radius: 50%;
+          background-color: transparent;
+          content: '';
+        }
+
+        em {
+          display: inline-block;
+          line-height: 1;
+          font-size: 1.7rem;
+        }
+      }
+
+      &:focus + label {
+        outline: 1px dashed lighten($green, 10%);
+        outline-offset: -1px;
+      }
+
+      &:checked + label {
+        &::before,
+        &::after {
+          box-shadow: 0 0 3px 1px rgb(45, 208, 133, 0.34);
+        }
+        &::before {
+          content: '';
+        }
+        &::after {
+          border-color: $green;
+        }
+      }
+    }
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+
+  &[class*='col-'] span input[type='radio'] + label {
+    height: auto;
+  }
+}
+
+.radio-list-wrap {
+  font-size: 0;
+
+  &.block {
+    span {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+
+    input[type='radio'] {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+
+      &:checked + label {
+        background-color: $green;
+      }
+
+      &:focus + label {
+        outline: 1px dashed lighten($green, 10%);
+        outline-offset: -1px;
+      }
+
+      &:hover + label {
+        &::before {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: transparent;
+          border: 1px solid $green;
+          border-radius: 25px;
+          box-shadow: 0 0 3px 1px rgb(45, 208, 133, 0.34);
+          content: '';
+        }
+      }
+
+      & + label {
+        display: block;
+        padding: 0 20px;
+        line-height: 38px;
+        height: 40px;
+        border-radius: 25px;
+        background-color: $darkGray2;
+        color: $white;
+        font-size: 1.4rem;
+        text-align: center;
+
+        em {
+          display: inline-block;
+          line-height: 1.2;
+          vertical-align: middle !important;
+        }
+      }
+    }
+  }
+}
+
+/*select*/
+.select-wrap {
+  position: relative;
+  display: inline-block;
+  // width: auto;
+  width: 100%;
+  height: 40px;
+  border: none;
+  vertical-align: top;
+  font-size: 0;
+  // background-color: $darkGray2;
+  border-radius: 7px;
+
+  label {
+    position: absolute;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      top: 17px;
+      right: 11px;
+      @include icon;
+      @include icon-arrow-down;
+      z-index: 11;
+      content: '';
+    }
+  }
+
+  select {
+    position: relative;
+    display: inline-block;
+    min-width: 180px;
+    width: 100%;
+    padding: 0 48px 0 18px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    color: $white;
+    background-color: transparent;
+    z-index: 10;
+    font-size: 1.6rem;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+/*text*/
+.text-wrap {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  text-align: left;
+
+  input[type='text'] {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 1.6rem;
+    color: $gray2;
+    background-color: $darkGray2;
+    height: 40px;
+    border-radius: 7px;
+  }
+
+  &.sm {
+    input[type='text'] {
+      height: 30px;
+      font-size: 1.4rem;
+    }
+    p {
+      line-height: 30px;
+    }
+  }
+
+  p {
+    margin: 0 !important;
+    padding: 0 20px;
+    line-height: 40px;
+    color: $gray2;
+    background-color: $darkGray2;
+    border-radius: 7px;
+  }
+}
+
+/*file*/
+.file-attach {
+  font-size: 0;
+
+  .text-wrap {
+    width: -webkit-calc(100% - 210px);
+    width: -moz-calc(100% - 210px);
+    width: calc(100% - 210px);
+  }
+}
+.file-wrap {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+
+  label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 7px;
+    z-index: 10;
+    background-color: $purple;
+
+    em {
+      display: inline-block;
+      position: relative;
+      color: $white;
+      font-size: 1.7rem;
+      line-height: 1;
+      vertical-align: middle !important;
+    }
+  }
+}

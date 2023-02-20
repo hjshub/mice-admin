@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html')
+
+    <title>파일 목록</title>
+
+    @@include('./include/header.html')
+
+    <style>
+      main {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 5rem 1rem;
+        color: #000;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      [class^='tableStyle'] {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 1.4rem;
+      }
+      [class^='tableStyle'] table {
+        width: 100%;
+        text-align: center;
+      }
+      [class^='tableStyle'] table th,
+      [class^='tableStyle'] table td {
+        border-style: solid;
+        border-color: #5dacf1;
+        line-height: 1.7;
+        padding: 8px 30px;
+      }
+      [class^='tableStyle'] table td {
+        text-align: left;
+      }
+      [class^='tableStyle'] table th {
+        border-width: 3px 0 1px 0px;
+      }
+      [class^='tableStyle'] table td {
+        border-width: 1px 0 0 1px;
+      }
+      [class^='tableStyle'] table td:first-of-type {
+        border-left: none;
+        text-align: center;
+      }
+      [class^='tableStyle'] table tr:first-of-type td {
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>File Index</h1>
+      </header>
+      <div class="contents">
+        <div class="tableStyle">
+          <table>
+            <caption>
+              목록
+            </caption>
+            <colgroup>
+              <col style="width: 6%" />
+              <col style="width: 12%" />
+              <col style="width: 12%" />
+              <col style="width: auto" />
+              <col style="width: 15%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th class="align-l" colspan="2" scope="col">구분</th>
+                <th scope="col">경로</th>
+                <th scope="col">진행 현황</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">메인</td>
+                <td></td>
+                <td>디자인 시안 요청</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">새로운 맵 생성</td>
+                <td><a href="./create/list.html" target="_blank">create/list.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">마이맵</td>
+                <td><a href="./mymap/list.html" target="_blank">mymap/list.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">퍼블리싱</td>
+                <td><a href="./publishing/list.html" target="_blank">publishing/list.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td rowspan="2">스마트 빌드</td>
+                <td>컨퍼런스</td>
+                <td><a href="./smartbuild/list_01.html" target="_blank">smartbuild/list_01.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td>전시</td>
+                <td><a href="./smartbuild/list_02.html" target="_blank">smartbuild/list_02.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td rowspan="2">스마트 맵</td>
+                <td>스마트맵</td>
+                <td><a href="./smartmap/list_01.html" target="_blank">smartmap/list_01.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td>장소 찾기 관리</td>
+                <td><a href="./smartmap/list_02.html" target="_blank">smartmap/list_02.html</a></td>
+                <td>완료</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">공지사항</td>
+                <td></td>
+                <td>디자인 시안 요청</td>
+              </tr>
+              <tr>
+                <td class="count"></td>
+                <td colspan="2">Q&amp;A</td>
+                <td></td>
+                <td>디자인 시안 요청</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const counts = document.querySelectorAll('.count');
+
+      counts.forEach((el, idx) => {
+        el.innerHTML = idx + 1;
+        console.log(el, idx);
+      });
+    </script>
+  </body>
+</html>

@@ -650,7 +650,11 @@ textarea {
       text-align: left;
       color: $darkGray;
       background-color: $white;
-      line-height: 1.7;
+      line-height: 1.5;
+
+      @include _bp(1680px) {
+        padding: 20px;
+      }
 
       figure {
         line-height: 1;

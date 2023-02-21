@@ -48,188 +48,229 @@
               <dd>
                 <div class="radio-wrap">
                   <span>
-                    <input type="radio" name="a" id="Chk-a1" checked />
+                    <input type="radio" name="a" id="Chk-a1" data-name="m-map" checked />
                     <label for="Chk-a1">동선관리 맵</label>
                   </span>
                   <span>
-                    <input type="radio" name="a" id="Chk-a2" />
+                    <input type="radio" name="a" id="Chk-a2" data-name="c-map" />
                     <label for="Chk-a2">일반 맵</label>
                   </span>
                 </div>
               </dd>
             </dl>
-            <dl class="table">
-              <dt>행사 선택</dt>
-              <dd>
-                <div class="select-wrap">
-                  <select class="wide" title="장소 선택" name="" id="">
-                    <option value="default" disabled selected>행사를 선택해주세요</option>
-                    <option value="a">행사1</option>
-                    <option value="b">행사2</option>
-                  </select>
-                </div>
-              </dd>
-            </dl>
-            <dl class="table">
-              <dt>스마트맵 이미지</dt>
-              <dd>
-                <div class="file-attach">
-                  <span class="text-wrap">
-                    <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                  </span>
-                  <span class="file-wrap">
-                    <label for="file_01"><em>파일 추가</em></label>
-                    <input
-                      class="hidden-txt"
-                      type="file"
-                      id="file_01"
-                      title="파일 첨부"
-                      onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                    />
-                  </span>
-                </div>
-              </dd>
-            </dl>
-            <dl class="table">
-              <dt>미니맵 이미지</dt>
-              <dd>
-                <div class="file-attach">
-                  <span class="text-wrap">
-                    <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                  </span>
-                  <span class="file-wrap">
-                    <label for="file_02"><em>파일 추가</em></label>
-                    <input
-                      class="hidden-txt"
-                      type="file"
-                      id="file_02"
-                      title="파일 첨부"
-                      onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                    />
-                  </span>
-                </div>
-              </dd>
-            </dl>
-            <p>*10M 미만 파일만 올리실 수 있습니다. JPG, JPEG, WEBP, PNG 포맷만 가능합니다.</p>
-            <div class="btn-wrapper">
-              <button type="button" class="btn-green"><em>저장</em></button>
+
+            <!-- 동선관리 맵 선택 시 노출 -->
+            <div class="m-map f-list" style="margin-top: 20px">
+              <dl class="table">
+                <dt>행사 선택</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="장소 선택" name="" id="">
+                      <option value="default" disabled selected>행사를 선택해주세요</option>
+                      <option value="a">행사1</option>
+                      <option value="b">행사2</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>스마트맵 이미지</dt>
+                <dd>
+                  <div class="file-attach">
+                    <span class="text-wrap">
+                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                    </span>
+                    <span class="file-wrap">
+                      <label for="file_m_01"><em>파일 추가</em></label>
+                      <input
+                        class="hidden-txt"
+                        type="file"
+                        id="file_m_01"
+                        title="파일 첨부"
+                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                      />
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>미니맵 이미지</dt>
+                <dd>
+                  <div class="file-attach">
+                    <span class="text-wrap">
+                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                    </span>
+                    <span class="file-wrap">
+                      <label for="file_m_02"><em>파일 추가</em></label>
+                      <input
+                        class="hidden-txt"
+                        type="file"
+                        id="file_m_02"
+                        title="파일 첨부"
+                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                      />
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <p>*10M 미만 파일만 올리실 수 있습니다. JPG, JPEG, WEBP, PNG 포맷만 가능합니다.</p>
+              <div class="btn-wrapper">
+                <button type="button" class="btn-green"><em>저장</em></button>
+              </div>
+            </div>
+
+            <!-- 일반 맵 선택 시 노출 -->
+            <div class="c-map f-list" style="display: none; margin-top: 20px">
+              <dl class="table">
+                <dt>행사 선택</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="장소 선택" name="" id="">
+                      <option value="default" disabled selected>행사를 선택해주세요</option>
+                      <option value="a">행사1</option>
+                      <option value="b">행사2</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>스마트맵 이미지</dt>
+                <dd>
+                  <div class="file-attach">
+                    <span class="text-wrap">
+                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                    </span>
+                    <span class="file-wrap">
+                      <label for="file_c_01"><em>파일 추가</em></label>
+                      <input
+                        class="hidden-txt"
+                        type="file"
+                        id="file_c_01"
+                        title="파일 첨부"
+                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                      />
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>미니맵 이미지</dt>
+                <dd>
+                  <div class="file-attach">
+                    <span class="text-wrap">
+                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                    </span>
+                    <span class="file-wrap">
+                      <label for="file_c_02"><em>파일 추가</em></label>
+                      <input
+                        class="hidden-txt"
+                        type="file"
+                        id="file_c_02"
+                        title="파일 첨부"
+                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                      />
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <p>*10M 미만 파일만 올리실 수 있습니다. JPG, JPEG, WEBP, PNG 포맷만 가능합니다.</p>
+              <div class="btn-wrapper">
+                <button type="button" class="btn-green"><em>저장</em></button>
+              </div>
             </div>
           </div>
 
           <!-- 목록 -->
-          <div class="grid-wrap col-1-3">
-            <div class="grid-item">
-              <div class="form-wrap">
-                <dl>
-                  <dt>기업 카테고리</dt>
-                  <dd>
-                    <div class="radio-list-wrap block customedScroll" id="category-list">
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c1" checked />
-                        <label for="Chk-c1"><em>AI 검색 엔진</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c2" />
-                        <label for="Chk-c2"><em>소셜 네트워크</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c3" />
-                        <label for="Chk-c3"><em>협업 소프트웨어</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c4" />
-                        <label for="Chk-c4"><em>영상 소프트웨어</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c5" />
-                        <label for="Chk-c5"><em>앱 쇼핑 솔루션</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c6" />
-                        <label for="Chk-c6"><em>음악 스트리밍 서비스</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c7" />
-                        <label for="Chk-c7"><em>빅데이터분석</em></label>
-                      </span>
-                      <span>
-                        <input type="radio" name="cateList" id="Chk-c8" />
-                        <label for="Chk-c8">
-                          <em>쇼핑몰 솔루션</em>
-                        </label>
-                      </span>
-                    </div>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="form-wrap">
-                <div class="editTool">
-                  <span class="t-pen on" tabindex="0"><em>펜</em></span>
-                  <span class="t-palette" tabindex="0"><em>팔레트</em></span>
-                  <span class="t-eraser" tabindex="0"><em>지우개</em></span>
+
+          <!-- 동선관리 맵 선택 시 노출 -->
+          <div class="m-map f-list" style="margin-top: 30px">
+            <div class="grid-wrap col-1-3">
+              <div class="grid-item">
+                <div class="form-wrap">
+                  <dl>
+                    <dt>기업 카테고리</dt>
+                    <dd>
+                      <div class="radio-list-wrap block customedScroll" id="category-list">
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c1" checked />
+                          <label for="Chk-c1"><em>AI 검색 엔진</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c2" />
+                          <label for="Chk-c2"><em>소셜 네트워크</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c3" />
+                          <label for="Chk-c3"><em>협업 소프트웨어</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c4" />
+                          <label for="Chk-c4"><em>영상 소프트웨어</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c5" />
+                          <label for="Chk-c5"><em>앱 쇼핑 솔루션</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c6" />
+                          <label for="Chk-c6"><em>음악 스트리밍 서비스</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c7" />
+                          <label for="Chk-c7"><em>빅데이터분석</em></label>
+                        </span>
+                        <span>
+                          <input type="radio" name="cateList" id="Chk-c8" />
+                          <label for="Chk-c8">
+                            <em>쇼핑몰 솔루션</em>
+                          </label>
+                        </span>
+                      </div>
+                    </dd>
+                  </dl>
                 </div>
-                <dl>
-                  <dt>
-                    벡스코 컨벤션센터1 섹터B<span>(900 x 600)</span> <em>*스마트맵의 지도는 미니맵에 동일하게 표시됩니다.</em>
-                  </dt>
-                  <dd class="wide align-c">
-                    <div id="map-area" class="customedScroll">
-                      <img src="../assets/images/sample/sample-map.gif" alt="스마트맵" />
-                    </div>
-                  </dd>
-                </dl>
               </div>
+              <div class="grid-item">
+                <div class="form-wrap">
+                  <div class="editTool">
+                    <span class="t-pen on" tabindex="0"><em>펜</em></span>
+                    <span class="t-palette" tabindex="0"><em>팔레트</em></span>
+                    <span class="t-eraser" tabindex="0"><em>지우개</em></span>
+                  </div>
+                  <dl>
+                    <dt>
+                      벡스코 컨벤션센터1 섹터B<span>(900 x 600)</span> <em>*스마트맵의 지도는 미니맵에 동일하게 표시됩니다.</em>
+                    </dt>
+                    <dd class="wide align-c">
+                      <div id="map-area" class="customedScroll">
+                        <img src="../assets/images/sample/sample-map-01.gif" alt="스마트맵" />
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper align-r">
+              <button type="button" class="btn-green"><em>저장</em></button>
             </div>
           </div>
 
-          <div class="btn-wrapper align-r">
-            <button type="button" class="btn-green"><em>저장</em></button>
-          </div>
-
-          <!-- 모달 -->
-
-          <!-- 새로운 공간 이름 작성 -->
-          <div class="modal type2 animate fast zoomOut" id="modal-areaNameUpdate">
-            <div class="modal-header">
-              <h4>
-                <span>새로운 공간 이름 작성</span>
-              </h4>
+          <!-- 일반 맵 선택 시 노출 -->
+          <div class="c-map f-list" style="display: none; margin-top: 30px">
+            <div class="form-wrap">
+              <dl>
+                <dt>
+                  벡스코 컨벤션센터1 섹터B<span>(900 x 600)</span> <em>*스마트맵의 지도는 미니맵에 동일하게 표시됩니다.</em>
+                </dt>
+                <dd class="wide align-c">
+                  <div id="map-area" class="customedScroll">
+                    <img src="../assets/images/sample/sample-map-02.png" alt="스마트맵" />
+                  </div>
+                </dd>
+              </dl>
             </div>
-            <div class="modal-body">
-              <div class="modal-contents">
-                <label for="map-name">공간 이름</label>
-                <span class="txt-byte">
-                  <input id="map-name" type="text" value="Kintex_beautycon_005" />
-                  <em>(20&#47;40)</em>
-                </span>
-              </div>
-              <div class="btn-wrapper col-2">
-                <button type="button" class="btn-close-modal"><em>취소</em></button>
-                <button type="button" class="btn-green btn-active-modal" data-modal-name="createNewArea"><em>확인</em></button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 새로운 공간 생성 -->
-          <div class="modal animate fast zoomOut" id="modal-createNewArea">
-            <div class="modal-header">
-              <h4>
-                <span class="hidden-txt">새로운 맵 생성</span>
-                <i class="icon icon-notice--hover-2x"></i>
-              </h4>
-            </div>
-            <div class="modal-body">
-              <div class="modal-contents">
-                <strong>
-                  새로운 공간이 생성되었습니다.<br />
-                  마이맵 메뉴에서 확인 할 수 있습니다.
-                </strong>
-              </div>
-              <div class="btn-wrapper col-2">
-                <button type="button" class="btn-green btn-close-modal"><em>확인</em></button>
-              </div>
+            <div class="btn-wrapper align-r">
+              <button type="button" class="btn-green"><em>저장</em></button>
             </div>
           </div>
         </div>
@@ -237,5 +278,24 @@
       @@include('../include/btnManual.html')
     </main>
     <!-- E #container -->
+
+    <script>
+      const radio = document.querySelectorAll('input[type=radio]');
+
+      radio.forEach((el) => {
+        el.addEventListener('change', function () {
+          const fList = document.querySelectorAll('.f-list');
+          const fList_ = document.querySelectorAll('.f-list.' + el.getAttribute('data-name'));
+
+          for (let i = 0; i < fList.length; i++) {
+            fList[i].style.display = 'none';
+          }
+
+          for (let k = 0; k < fList_.length; k++) {
+            fList_[k].style.display = 'block';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

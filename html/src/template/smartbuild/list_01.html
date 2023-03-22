@@ -35,97 +35,99 @@
 
           <!-- 검색 -->
           <div class="form-wrap">
-            <dl class="table">
-              <dt>선택</dt>
-              <dd>
-                <div class="radio-wrap">
-                  <span>
-                    <input type="radio" name="a" id="Chk-a1" checked />
-                    <label for="Chk-a1">디지털 트윈</label>
-                  </span>
-                  <span>
-                    <input type="radio" name="a" id="Chk-a2" />
-                    <label for="Chk-a2">가상 컨벤션</label>
-                  </span>
-                </div>
-              </dd>
-            </dl>
-            <dl class="table">
-              <dt>장소</dt>
-              <dd>
-                <div class="select-wrap">
-                  <select class="wide" title="장소 선택" name="" id="">
-                    <option value="default" disabled selected>장소를 선택해주세요</option>
-                    <option value="a">장소1</option>
-                    <option value="b">장소2</option>
-                  </select>
-                </div>
-              </dd>
-            </dl>
-            <dl class="table">
-              <dt>인원</dt>
-              <dd>
-                <div class="select-wrap">
-                  <select class="wide" title="인원 선택" name="" id="">
-                    <option value="default" disabled selected>인원 선택해주세요</option>
-                    <option value="all">전체</option>
-                    <option value="100">100</option>
-                    <option value="300">300</option>
-                    <option value="500">500</option>
-                    <option value="1000">1000</option>
-                    <option value="2000">2000</option>
-                    <option value="3000">3000</option>
-                  </select>
-                </div>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <span>컨퍼런스 테이블 스타일</span>
-                <div class="toolTipBox tipInfo2 _hover" tabindex="0">
-                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
-                  @@include('../include/tooltip6.html')
-                </div>
-              </dt>
-              <dd class="wide">
-                <div class="radio-list-wrap">
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t1" checked />
-                    <label for="Chk-t1"><em>전체</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t2" />
-                    <label for="Chk-t2"><em>1인 쇼파</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t3" />
-                    <label for="Chk-t3"><em>2인 직사각 테이블</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t4" />
-                    <label for="Chk-t4"><em>4인 직사각 테이블</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t5" />
-                    <label for="Chk-t5"><em>8인 직사각 테이블</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t6" />
-                    <label for="Chk-t6"><em>8인 원형 테이블</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t7" />
-                    <label for="Chk-t7"><em>6인 원형 테이블</em></label>
-                  </span>
-                  <span>
-                    <input type="radio" name="tableStyle" id="Chk-t8" />
-                    <label for="Chk-t8">
-                      <em> 테이블 자동배치 없음 </em>
-                    </label>
-                  </span>
-                </div>
-              </dd>
-            </dl>
+            <div class="grid-wrap">
+              <dl class="table">
+                <dt>선택</dt>
+                <dd>
+                  <div class="radio-wrap">
+                    <span>
+                      <input type="radio" name="a" id="Chk-a1" checked />
+                      <label for="Chk-a1">디지털 트윈</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="a" id="Chk-a2" />
+                      <label for="Chk-a2">가상 컨벤션</label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>장소</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="장소 선택" name="" id="">
+                      <option value="default" disabled selected>장소를 선택해주세요</option>
+                      <option value="a">장소1</option>
+                      <option value="b">장소2</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>인원</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="인원 선택" name="" id="">
+                      <option value="default" disabled selected>인원 선택해주세요</option>
+                      <option value="all">전체</option>
+                      <option value="100">100</option>
+                      <option value="300">300</option>
+                      <option value="500">500</option>
+                      <option value="1000">1000</option>
+                      <option value="2000">2000</option>
+                      <option value="3000">3000</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <span>컨퍼런스 테이블 스타일</span>
+                  <div class="toolTipBox tipInfo2 _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    @@include('../include/tooltip6.html')
+                  </div>
+                </dt>
+                <dd class="wide">
+                  <div class="radio-list-wrap">
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t1" checked />
+                      <label for="Chk-t1"><em>전체</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t2" />
+                      <label for="Chk-t2"><em>1인 쇼파</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t3" />
+                      <label for="Chk-t3"><em>2인 직사각 테이블</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t4" />
+                      <label for="Chk-t4"><em>4인 직사각 테이블</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t5" />
+                      <label for="Chk-t5"><em>8인 직사각 테이블</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t6" />
+                      <label for="Chk-t6"><em>8인 원형 테이블</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t7" />
+                      <label for="Chk-t7"><em>6인 원형 테이블</em></label>
+                    </span>
+                    <span>
+                      <input type="radio" name="tableStyle" id="Chk-t8" />
+                      <label for="Chk-t8">
+                        <em> 테이블 자동배치 없음 </em>
+                      </label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+            </div>
             <div class="btn-wrapper">
               <button type="button"><em>초기화</em></button>
               <button type="button" class="btn-green"><em>검색</em></button>

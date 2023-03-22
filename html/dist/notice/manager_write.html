@@ -114,88 +114,90 @@
       <div class="contents">
         <!-- 등록 -->
         <div class="form-wrap">
-          <dl class="table">
-            <dt>제목</dt>
-            <dd>
-              <div class="text-wrap">
-                <input type="text" placeholder="제목을 입력해주세요" />
-              </div>
-            </dd>
-          </dl>
-          <dl class="table">
-            <dt>예약일</dt>
-            <dd>
-              <div class="text-wrap inline calendar">
-                <input type="text" readonly />
-              </div>
-              <div class="text-wrap inline time">
-                <input type="text" readonly />
-              </div>
-            </dd>
-          </dl>
-          <dl class="table" style="margin: 30px 0">
-            <dt>중요</dt>
-            <dd>
-              <div class="chk-wrap">
-                <span>
-                  <input type="checkbox" id="Chk-a" />
-                  <label for="Chk-a"><em>중요 등록</em></label>
-                </span>
-              </div>
-            </dd>
-          </dl>
-          <dl class="table">
-            <dt>노출 여부</dt>
-            <dd>
-              <div class="select-wrap">
-                <select class="wide" title="노출 여부" name="" id="">
-                  <option value="a">노출</option>
-                  <option value="b">비노출</option>
-                </select>
-              </div>
-            </dd>
-          </dl>
-          <dl class="table v-top">
-            <dt>내용</dt>
-            <dd>
-              <div class="text-wrap">
-                <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
-              </div>
-            </dd>
-          </dl>
-          <dl class="table v-top">
-            <dt>첨부파일</dt>
-            <dd>
-              <div class="file-attach">
-                <span class="text-wrap">
-                  <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                </span>
-                <span class="file-wrap">
-                  <label for="file_01"><em>업로드</em></label>
-                  <input class="hidden-txt" type="file" id="file_01" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
-                </span>
-              </div>
-              <div class="file-attach">
-                <span class="text-wrap">
-                  <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                </span>
-                <span class="file-wrap">
-                  <label for="file_02"><em>업로드</em></label>
-                  <input class="hidden-txt" type="file" id="file_02" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
-                </span>
-              </div>
-              <div class="file-attach">
-                <span class="text-wrap">
-                  <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                </span>
-                <span class="file-wrap">
-                  <label for="file_03"><em>업로드</em></label>
-                  <input class="hidden-txt" type="file" id="file_03" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
-                </span>
-              </div>
-              <p>* pdf, ppt, doc, hwp, txt, zip 파일만 등록 가능하며 최대 3개까지 등록 가능 합니다.</p>
-            </dd>
-          </dl>
+          <div class="grid-wrap">
+            <dl class="table">
+              <dt>제목</dt>
+              <dd>
+                <div class="text-wrap">
+                  <input type="text" placeholder="제목을 입력해주세요" />
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt>예약일</dt>
+              <dd>
+                <div class="text-wrap inline calendar">
+                  <input type="text" readonly />
+                </div>
+                <div class="text-wrap inline time">
+                  <input type="text" readonly />
+                </div>
+              </dd>
+            </dl>
+            <dl class="table" style="margin: 10px 0">
+              <dt>중요</dt>
+              <dd>
+                <div class="chk-wrap">
+                  <span>
+                    <input type="checkbox" id="Chk-a" />
+                    <label for="Chk-a"><em>중요 등록</em></label>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt>노출 여부</dt>
+              <dd>
+                <div class="select-wrap">
+                  <select class="wide" title="노출 여부" name="" id="">
+                    <option value="a">노출</option>
+                    <option value="b">비노출</option>
+                  </select>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table v-top">
+              <dt>내용</dt>
+              <dd>
+                <div class="text-wrap">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table v-top">
+              <dt>첨부파일</dt>
+              <dd>
+                <div class="file-attach">
+                  <span class="text-wrap">
+                    <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                  </span>
+                  <span class="file-wrap">
+                    <label for="file_01"><em>업로드</em></label>
+                    <input class="hidden-txt" type="file" id="file_01" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
+                  </span>
+                </div>
+                <div class="file-attach">
+                  <span class="text-wrap">
+                    <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                  </span>
+                  <span class="file-wrap">
+                    <label for="file_02"><em>업로드</em></label>
+                    <input class="hidden-txt" type="file" id="file_02" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
+                  </span>
+                </div>
+                <div class="file-attach">
+                  <span class="text-wrap">
+                    <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                  </span>
+                  <span class="file-wrap">
+                    <label for="file_03"><em>업로드</em></label>
+                    <input class="hidden-txt" type="file" id="file_03" title="업로드" onchange="gb.CommonFunction.fileUpload(this);" />
+                  </span>
+                </div>
+                <p>* pdf, ppt, doc, hwp, txt, zip 파일만 등록 가능하며 최대 3개까지 등록 가능 합니다.</p>
+              </dd>
+            </dl>
+          </div>
 
           <div class="btn-wrapper">
             <button type="button"><em>삭제</em></button>

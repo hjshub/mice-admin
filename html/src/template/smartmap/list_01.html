@@ -43,76 +43,80 @@
 
           <!-- 검색 -->
           <div class="form-wrap">
-            <dl class="table">
-              <dt>선택</dt>
-              <dd>
-                <div class="radio-wrap">
-                  <span>
-                    <input type="radio" name="selectMapType" id="Chk-a1" data-name="m-map" checked />
-                    <label for="Chk-a1">동선관리 맵</label>
-                  </span>
-                  <span>
-                    <input type="radio" name="selectMapType" id="Chk-a2" data-name="c-map" />
-                    <label for="Chk-a2">일반 맵</label>
-                  </span>
-                </div>
-              </dd>
-            </dl>
+            <div class="grid-wrap">
+              <dl class="table">
+                <dt>선택</dt>
+                <dd>
+                  <div class="radio-wrap">
+                    <span>
+                      <input type="radio" name="selectMapType" id="Chk-a1" data-name="m-map" checked />
+                      <label for="Chk-a1">동선관리 맵</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="selectMapType" id="Chk-a2" data-name="c-map" />
+                      <label for="Chk-a2">일반 맵</label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+            </div>
 
             <!-- 동선관리 맵 선택 시 노출 -->
             <div class="m-map f-list" style="margin-top: 20px">
-              <dl class="table">
-                <dt>행사 선택</dt>
-                <dd>
-                  <div class="select-wrap">
-                    <select class="wide" title="장소 선택" name="" id="">
-                      <option value="default" disabled selected>행사를 선택해주세요</option>
-                      <option value="a">행사1</option>
-                      <option value="b">행사2</option>
-                    </select>
-                  </div>
-                </dd>
-              </dl>
-              <dl class="table">
-                <dt>스마트맵 이미지</dt>
-                <dd>
-                  <div class="file-attach">
-                    <span class="text-wrap">
-                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                    </span>
-                    <span class="file-wrap">
-                      <label for="file_m_01"><em>파일 추가</em></label>
-                      <input
-                        class="hidden-txt"
-                        type="file"
-                        id="file_m_01"
-                        title="파일 첨부"
-                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                      />
-                    </span>
-                  </div>
-                </dd>
-              </dl>
-              <dl class="table">
-                <dt>미니맵 이미지</dt>
-                <dd>
-                  <div class="file-attach">
-                    <span class="text-wrap">
-                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                    </span>
-                    <span class="file-wrap">
-                      <label for="file_m_02"><em>파일 추가</em></label>
-                      <input
-                        class="hidden-txt"
-                        type="file"
-                        id="file_m_02"
-                        title="파일 첨부"
-                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                      />
-                    </span>
-                  </div>
-                </dd>
-              </dl>
+              <div class="grid-wrap">
+                <dl class="table">
+                  <dt>행사 선택</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="장소 선택" name="" id="">
+                        <option value="default" disabled selected>행사를 선택해주세요</option>
+                        <option value="a">행사1</option>
+                        <option value="b">행사2</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>스마트맵 이미지</dt>
+                  <dd>
+                    <div class="file-attach">
+                      <span class="text-wrap">
+                        <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                      </span>
+                      <span class="file-wrap">
+                        <label for="file_m_01"><em>파일 추가</em></label>
+                        <input
+                          class="hidden-txt"
+                          type="file"
+                          id="file_m_01"
+                          title="파일 첨부"
+                          onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                        />
+                      </span>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>미니맵 이미지</dt>
+                  <dd>
+                    <div class="file-attach">
+                      <span class="text-wrap">
+                        <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                      </span>
+                      <span class="file-wrap">
+                        <label for="file_m_02"><em>파일 추가</em></label>
+                        <input
+                          class="hidden-txt"
+                          type="file"
+                          id="file_m_02"
+                          title="파일 첨부"
+                          onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                        />
+                      </span>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
               <p>*10M 미만 파일만 올리실 수 있습니다. JPG, JPEG, WEBP, PNG 포맷만 가능합니다.</p>
               <div class="btn-wrapper">
                 <button type="button" class="btn-green"><em>저장</em></button>
@@ -121,58 +125,60 @@
 
             <!-- 일반 맵 선택 시 노출 -->
             <div class="c-map f-list" style="display: none; margin-top: 20px">
-              <dl class="table">
-                <dt>행사 선택</dt>
-                <dd>
-                  <div class="select-wrap">
-                    <select class="wide" title="장소 선택" name="" id="">
-                      <option value="default" disabled selected>행사를 선택해주세요</option>
-                      <option value="a">행사1</option>
-                      <option value="b">행사2</option>
-                    </select>
-                  </div>
-                </dd>
-              </dl>
-              <dl class="table">
-                <dt>스마트맵 이미지</dt>
-                <dd>
-                  <div class="file-attach">
-                    <span class="text-wrap">
-                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                    </span>
-                    <span class="file-wrap">
-                      <label for="file_c_01"><em>파일 추가</em></label>
-                      <input
-                        class="hidden-txt"
-                        type="file"
-                        id="file_c_01"
-                        title="파일 첨부"
-                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                      />
-                    </span>
-                  </div>
-                </dd>
-              </dl>
-              <dl class="table">
-                <dt>미니맵 이미지</dt>
-                <dd>
-                  <div class="file-attach">
-                    <span class="text-wrap">
-                      <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
-                    </span>
-                    <span class="file-wrap">
-                      <label for="file_c_02"><em>파일 추가</em></label>
-                      <input
-                        class="hidden-txt"
-                        type="file"
-                        id="file_c_02"
-                        title="파일 첨부"
-                        onchange="gb.CommonFunction.fileUpload(this, 'image');"
-                      />
-                    </span>
-                  </div>
-                </dd>
-              </dl>
+              <div class="grid-wrap">
+                <dl class="table">
+                  <dt>행사 선택</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="장소 선택" name="" id="">
+                        <option value="default" disabled selected>행사를 선택해주세요</option>
+                        <option value="a">행사1</option>
+                        <option value="b">행사2</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>스마트맵 이미지</dt>
+                  <dd>
+                    <div class="file-attach">
+                      <span class="text-wrap">
+                        <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                      </span>
+                      <span class="file-wrap">
+                        <label for="file_c_01"><em>파일 추가</em></label>
+                        <input
+                          class="hidden-txt"
+                          type="file"
+                          id="file_c_01"
+                          title="파일 첨부"
+                          onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                        />
+                      </span>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>미니맵 이미지</dt>
+                  <dd>
+                    <div class="file-attach">
+                      <span class="text-wrap">
+                        <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                      </span>
+                      <span class="file-wrap">
+                        <label for="file_c_02"><em>파일 추가</em></label>
+                        <input
+                          class="hidden-txt"
+                          type="file"
+                          id="file_c_02"
+                          title="파일 첨부"
+                          onchange="gb.CommonFunction.fileUpload(this, 'image');"
+                        />
+                      </span>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
               <p>*10M 미만 파일만 올리실 수 있습니다. JPG, JPEG, WEBP, PNG 포맷만 가능합니다.</p>
               <div class="btn-wrapper">
                 <button type="button" class="btn-green"><em>저장</em></button>
@@ -181,7 +187,6 @@
           </div>
 
           <!-- 목록 -->
-
           <!-- 동선관리 맵 선택 시 노출 -->
           <div class="m-map f-list" style="margin-top: 30px">
             <div class="grid-wrap col-1-3">

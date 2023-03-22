@@ -118,13 +118,36 @@
           </div>
 
           <!-- 목록 -->
-          <p class="txt-info">
-            <i class="icon icon-notice"></i>&nbsp; <b>디지털 트윈 &gt; 컨퍼런스</b> 행사의 스마트 조건에 부함하는 <b>3</b>건의
-            컨벤션 센터가 조회되었습니다.
-          </p>
-          <ul class="grid-wrap col-5">
-            @@include('../include/smartBuild-list.html')
-          </ul>
+          <div class="list-wrap">
+            <div class="list-header">
+              <p class="txt-info">
+                <i class="icon icon-notice"></i>&nbsp; <b>디지털 트윈 &gt; 컨퍼런스</b> 행사의 스마트 조건에 부함하는 <b>3</b>건의
+                컨벤션 센터가 조회되었습니다.
+              </p>
+            </div>
+            <ul class="grid-wrap col-5">
+              @@for(var i = 1; i < 15; i++){
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate">
+                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="가상 미팅룸 `+i+`" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate"
+                      ><em>가상 미팅룸 `+i+`</em></a
+                    >
+                    <div class="toolTipBox tipInfo _hover" tabindex="0">
+                      <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                      @@include('../include/tooltip.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              }
+            </ul>
+          </div>
 
           <!-- 모달 -->
 

@@ -35,19 +35,74 @@
           </ul>
 
           <!-- 목록 -->
-          <ul class="grid-wrap col-5">
-            <li class="grid-item">
-              <div class="list-item new">
-                <a href="#" class="btn-create-new">
-                  <span>
-                    <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
-                    <em>새로운 공간 생성</em>
-                  </span>
-                </a>
-              </div>
-            </li>
-            @@include('../include/publishing-list.html')
-          </ul>
+          <div class="list-wrap">
+            <ul class="grid-wrap col-5">
+              <li class="grid-item">
+                <div class="list-item new">
+                  <a href="#" class="btn-create-new">
+                    <span>
+                      <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
+                      <em>새로운 공간 생성</em>
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <span class="list-tag">
+                      <i class="icon icon-finish"></i>
+                      <em>공개 완료</em>
+                    </span>
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-1.jpg" alt="title 1" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title 1</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip4.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="list-item disabled">
+                  <div class="thumb-box">
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-2.jpg" alt="title 2" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title 2</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip5.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              @@for(var i = 3; i < 15; i++){
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="title `+i+`" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title `+i+`</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip4.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              }
+            </ul>
+          </div>
 
           <!-- 모달 -->
 

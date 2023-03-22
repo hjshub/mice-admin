@@ -5,7 +5,8 @@
  */
 
 .modal {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   text-align: center;
   position: fixed;
   width: 450px;

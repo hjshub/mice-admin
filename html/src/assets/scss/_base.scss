@@ -15,7 +15,7 @@
 
   &:focus-visible {
     outline: 1px dashed lighten($green, 10%);
-    outline-offset: -1px;
+    outline-offset: 1px;
   }
 }
 
@@ -257,36 +257,36 @@ hr {
   margin: 1em 0;
   padding: 0;
   border: 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #3b3d3c;
 }
 
 /* Placeholder */
 ::-webkit-input-placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 :-moz-placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 ::-moz-placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 :-ms-input-placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 ::-ms-input-placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 ::placeholder {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 .placeholderTxt {
-  color: $gray !important;
+  color: $gray2 !important;
   font-size: 1.6rem;
 }
 

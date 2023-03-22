@@ -35,12 +35,82 @@
           </ul>
 
           <!-- 목록 -->
-          <ul class="grid-wrap col-5">
-            @@include('../include/myMap-list.html')
-          </ul>
+          <div class="list-wrap">
+            <ul class="grid-wrap col-5">
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-1.jpg" alt="title 1" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title 1</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip2.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <span class="list-tag">
+                      <i class="icon icon-finish"></i>
+                      <em>퍼블리싱 완료</em>
+                    </span>
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-2.jpg" alt="title 2" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title 2</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip2.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="list-item disabled">
+                  <div class="thumb-box">
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-3.jpg" alt="title 3" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title 3</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip3.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              @@for(var i = 4; i < 15; i++){
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="#">
+                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="title `+i+`" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="#"><em>title `+i+`</em></a>
+                    <div class="toolTipBox" tabindex="0">
+                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      @@include('../include/tooltip2.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              }
+            </ul>
+          </div>
 
           <!-- 모달 -->
-
           <!-- 맵 퍼블리싱 -->
           <div class="modal animate fast zoomOut" id="modal-mapPublishing">
             <div class="modal-header">

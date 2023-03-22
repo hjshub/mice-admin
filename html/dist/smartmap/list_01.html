@@ -15,6 +15,7 @@
   <script defer src="../assets/js/common.js"></script>
 
   <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 
 </head>
@@ -27,7 +28,7 @@
       <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
     </dd>
     <dd>
-      <a href="#contents"><em>본문으로 바로가기</em></a>
+      <a href="#container"><em>본문으로 바로가기</em></a>
     </dd>
   </dl>
   <!-- // 건너띄기 링크 -->
@@ -72,6 +73,11 @@
               <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
             </a>
           </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="sub-menu">
@@ -79,8 +85,9 @@
           <li><a href="#">MICE지식교육사이트</a></li>
           <li><a href="#">의사결정지원도구</a></li>
           <li><a href="#">라이선스 문의</a></li>
-          <li><a href="#" download>매뉴얼</a></li>
-          <li><a href="#">공지사항</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -126,11 +133,11 @@
             <dd>
               <div class="radio-wrap">
                 <span>
-                  <input type="radio" name="a" id="Chk-a1" data-name="m-map" checked />
+                  <input type="radio" name="selectMapType" id="Chk-a1" data-name="m-map" checked />
                   <label for="Chk-a1">동선관리 맵</label>
                 </span>
                 <span>
-                  <input type="radio" name="a" id="Chk-a2" data-name="c-map" />
+                  <input type="radio" name="selectMapType" id="Chk-a2" data-name="c-map" />
                   <label for="Chk-a2">일반 맵</label>
                 </span>
               </div>
@@ -329,7 +336,7 @@
         </div>
       </div>
     </div>
-    <a href="#" target="_blank" class="btn-manual">
+    <a href="../manual/list.html" class="btn-manual">
       <em class="hidden-txt">매뉴얼 바로가기</em>
       <img src="../assets/images/img-manual.png" alt="" />
     </a>
@@ -338,12 +345,12 @@
   <!-- E #container -->
 
   <script>
-    const radio = document.querySelectorAll('input[type=radio]');
+    const radio = document.querySelectorAll('input[type=radio][name=selectMapType]');
 
     radio.forEach((el) => {
       el.addEventListener('change', function() {
         const fList = document.querySelectorAll('.f-list');
-        const fList_ = document.querySelectorAll('.f-list.' + el.getAttribute('data-name'));
+        const fList_ = document.querySelectorAll('.f-list.' + this.getAttribute('data-name'));
 
         for (let i = 0; i < fList.length; i++) {
           fList[i].style.display = 'none';

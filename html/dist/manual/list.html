@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="Author" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+
+
+  <title>매뉴얼 관리 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+
+  <script src="../assets/js/lib.js"></script>
+  <script defer src="../assets/js/common.js"></script>
+
+  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- 건너띄기 링크 -->
+  <dl id="skipNavigation">
+    <dt class="hidden-txt">바로가기 및 건너띄기 링크</dt>
+    <dd>
+      <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
+    </dd>
+    <dd>
+      <a href="#container"><em>본문으로 바로가기</em></a>
+    </dd>
+  </dl>
+  <!-- // 건너띄기 링크 -->
+
+
+  <!-- SNB -->
+  <aside class="side" id="snb">
+    <header class="side-header">
+      <h1>
+        <span>포스트 코로나 대응 MICE</span><br />
+        <span>온&middot;오프라인연계전시.컨벤션</span><br />
+        <strong>통합 지원 서비스 플랫폼</strong>
+      </h1>
+      <div class="user">
+        <span class="user-thumb"> <img src="../assets/images/sample/profile-thumbnail.png" alt="프로필" /> </span><br />
+        <span class="user-name">PCNUSER01</span><br />
+        <button class="sign-out" type="button">
+          <em><i class="icon icon-signout f-icon"></i>로그아웃</em>
+        </button>
+      </div>
+    </header>
+    <div class="side-mid customedScroll">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="../create/list.html">
+              <span><i class="icon icon-add f-icon"></i>새로운 맵 생성</span>
+            </a>
+          </li>
+          <li>
+            <a href="../mymap/list.html">
+              <span><i class="icon icon-map f-icon"></i>마이맵</span>
+            </a>
+          </li>
+          <li>
+            <a href="../publishing/list.html">
+              <span><i class="icon icon-pub f-icon"></i>퍼블리싱</span>
+            </a>
+          </li>
+          <li>
+            <a href="../smartbuild/list_01.html">
+              <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
+            </a>
+          </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="#">MICE지식교육사이트</a></li>
+          <li><a href="#">의사결정지원도구</a></li>
+          <li><a href="#">라이선스 문의</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-footer">
+      <button class="qna" type="button"><i class="icon icon-qna f-icon"></i>문의하기</button>
+      <span>v.1.2</span>
+    </div>
+  </aside>
+
+
+  <!-- 본문 -->
+  <!-- S #container -->
+  <main id="container">
+    <div class="inner">
+      <!-- 타이틀 -->
+      <header class="heading-title-Wrap">
+        <h2>
+          <i class="icon icon-board--tit"></i>
+          &nbsp;매뉴얼
+        </h2>
+        <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
+      </header>
+
+      <div class="contents">
+        <div class="form-wrap">
+          <dl class="table v-top">
+            <dt>매뉴얼 파일</dt>
+            <dd>
+              <div class="file-attach">
+                <span class="text-wrap">
+                  <input type="text" class="fileName" title="파일명 및 확장자" disabled="" />
+                </span>
+                <span class="file-wrap">
+                  <label for="file_01"><em>업로드</em></label>
+                  <input class="hidden-txt" type="file" id="file_01" title="파일 첨부" onchange="gb.CommonFunction.fileUpload(this);" />
+                </span>
+              </div>
+              <p>*pdf, ppt, doc, hwp, txt, zip 파일만 등록 가능합니다.</p>
+              <hr />
+              <div class="upload-list">
+                <span>
+                  <em>매뉴얼v1.2.pdf</em>
+                  <a href="javascript:void(0);">
+                    <i class="icon icon-delete"><em class="hidden-txt">삭제</em></i>
+                  </a>
+                </span>
+              </div>
+            </dd>
+          </dl>
+          <div class="btn-wrapper">
+            <button type="button" class="btn-green"><em>저장</em></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="../manual/list.html" class="btn-manual">
+      <em class="hidden-txt">매뉴얼 바로가기</em>
+      <img src="../assets/images/img-manual.png" alt="" />
+    </a>
+
+  </main>
+  <!-- E #container -->
+</body>
+
+</html>

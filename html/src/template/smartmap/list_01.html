@@ -48,11 +48,11 @@
               <dd>
                 <div class="radio-wrap">
                   <span>
-                    <input type="radio" name="a" id="Chk-a1" data-name="m-map" checked />
+                    <input type="radio" name="selectMapType" id="Chk-a1" data-name="m-map" checked />
                     <label for="Chk-a1">동선관리 맵</label>
                   </span>
                   <span>
-                    <input type="radio" name="a" id="Chk-a2" data-name="c-map" />
+                    <input type="radio" name="selectMapType" id="Chk-a2" data-name="c-map" />
                     <label for="Chk-a2">일반 맵</label>
                   </span>
                 </div>
@@ -280,12 +280,12 @@
     <!-- E #container -->
 
     <script>
-      const radio = document.querySelectorAll('input[type=radio]');
+      const radio = document.querySelectorAll('input[type=radio][name=selectMapType]');
 
       radio.forEach((el) => {
         el.addEventListener('change', function () {
           const fList = document.querySelectorAll('.f-list');
-          const fList_ = document.querySelectorAll('.f-list.' + el.getAttribute('data-name'));
+          const fList_ = document.querySelectorAll('.f-list.' + this.getAttribute('data-name'));
 
           for (let i = 0; i < fList.length; i++) {
             fList[i].style.display = 'none';

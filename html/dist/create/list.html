@@ -15,6 +15,7 @@
   <script defer src="../assets/js/common.js"></script>
 
   <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 
 </head>
@@ -27,7 +28,7 @@
       <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
     </dd>
     <dd>
-      <a href="#contents"><em>본문으로 바로가기</em></a>
+      <a href="#container"><em>본문으로 바로가기</em></a>
     </dd>
   </dl>
   <!-- // 건너띄기 링크 -->
@@ -72,6 +73,11 @@
               <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
             </a>
           </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="sub-menu">
@@ -79,8 +85,9 @@
           <li><a href="#">MICE지식교육사이트</a></li>
           <li><a href="#">의사결정지원도구</a></li>
           <li><a href="#">라이선스 문의</a></li>
-          <li><a href="#" download>매뉴얼</a></li>
-          <li><a href="#">공지사항</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -106,136 +113,461 @@
 
       <div class="contents">
         <!-- 목록 -->
-        <ul class="grid-wrap col-5">
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
-                  <img src="../assets/images/sample/c-sample-thumb-01.jpg" alt="가상 미팅룸" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">가상 미팅룸</a>
-                <div class="toolTipBox tipInfo _hover" tabindex="0">
-                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
-                      <span>
-                        벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
-                        46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
-                      </span>
-                      <span class="txt-green">
-                        <em>전시A홀</em><br />
-                        <em>규모 : 1,440㎡</em><br />
-                        <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
-                        <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
-                      </span>
-                    </div>
-                  </div>
+        <div class="list-wrap">
+          <ul class="grid-wrap col-5">
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-1.jpg" alt="샘플 이미지 1" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 1</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
-                  <img src="../assets/images/sample/c-sample-thumb-02.jpg" alt="엑스코 전시A홀" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">엑스코 전시A홀</a>
-                <div class="toolTipBox tipInfo _hover" tabindex="0">
-                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
-                      <span>
-                        벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
-                        46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
-                      </span>
-                      <span class="txt-green">
-                        <em>전시A홀</em><br />
-                        <em>규모 : 1,440㎡</em><br />
-                        <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
-                        <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
-                      </span>
-                    </div>
-                  </div>
+            </li>
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-2.jpg" alt="샘플 이미지 2" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 2</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
-                  <img src="../assets/images/sample/c-sample-thumb-03.jpg" alt="엑스코 전시B홀" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">엑스코 전시B홀</a>
-                <div class="toolTipBox tipInfo _hover" tabindex="0">
-                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
-                      <span>
-                        벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
-                        46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
-                      </span>
-                      <span class="txt-green">
-                        <em>전시A홀</em><br />
-                        <em>규모 : 1,440㎡</em><br />
-                        <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
-                        <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
-                      </span>
-                    </div>
-                  </div>
+            </li>
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-3.jpg" alt="샘플 이미지 3" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 3</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
-                  <img src="../assets/images/sample/c-sample-thumb-04.jpg" alt="엑스코 오디토리움" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">엑스코 오디토리움</a>
-                <div class="toolTipBox tipInfo _hover" tabindex="0">
-                  <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
-                      <span>
-                        벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
-                        46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
-                      </span>
-                      <span class="txt-green">
-                        <em>전시A홀</em><br />
-                        <em>규모 : 1,440㎡</em><br />
-                        <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
-                        <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
-                      </span>
-                    </div>
-                  </div>
+            </li>
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-4.jpg" alt="샘플 이미지 4" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 4</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-        </ul>
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-5.jpg" alt="샘플 이미지 5" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 5</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-6.jpg" alt="샘플 이미지 6" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 6</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-7.jpg" alt="샘플 이미지 7" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 7</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-8.jpg" alt="샘플 이미지 8" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 8</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-9.jpg" alt="샘플 이미지 9" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 9</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-10.jpg" alt="샘플 이미지 10" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 10</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-11.jpg" alt="샘플 이미지 11" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 11</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-12.jpg" alt="샘플 이미지 12" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 12</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-13.jpg" alt="샘플 이미지 13" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 13</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                    <img src="../assets/images/sample/sample-thumb-14.jpg" alt="샘플 이미지 14" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"><em>가상 미팅룸 14</em></a>
+                  <div class="toolTipBox tipInfo _hover" tabindex="0">
+                    <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <figure><img src="../assets/images/sample/c-sample-icon.png" alt="bexco" /></figure>
+                        <span>
+                          벡스코 전시장은 3개의 홀로 분할 가능한 총 26,508m 2의 제1전시장과 19,872m2의 제2전시장으로 이루어져 총 실내 전시 면적이
+                          46,380m2 규모로 20,000m2 이상의 대형국제행사를 동시에 2건 이상 개최할 수 있다.
+                        </span>
+                        <span class="txt-green">
+                          <em>전시A홀</em><br />
+                          <em>규모 : 1,440㎡</em><br />
+                          <em>주요용도 : 국제회의 및 각종 세미나 등</em><br />
+                          <em>특징 : 고급스러운 회의분위기 연출 가능 전동스크린 (200″, 300″)</em>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
 
         <!-- 모달 -->
-
         <!-- 새로운 맵 생성 -->
         <div class="modal animate fast zoomOut" id="modal-createNewModal">
           <div class="modal-header">
@@ -256,7 +588,7 @@
         </div>
       </div>
     </div>
-    <a href="#" target="_blank" class="btn-manual">
+    <a href="../manual/list.html" class="btn-manual">
       <em class="hidden-txt">매뉴얼 바로가기</em>
       <img src="../assets/images/img-manual.png" alt="" />
     </a>

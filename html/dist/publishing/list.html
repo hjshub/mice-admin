@@ -15,6 +15,7 @@
   <script defer src="../assets/js/common.js"></script>
 
   <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 
 </head>
@@ -27,7 +28,7 @@
       <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
     </dd>
     <dd>
-      <a href="#contents"><em>본문으로 바로가기</em></a>
+      <a href="#container"><em>본문으로 바로가기</em></a>
     </dd>
   </dl>
   <!-- // 건너띄기 링크 -->
@@ -72,6 +73,11 @@
               <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
             </a>
           </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="sub-menu">
@@ -79,8 +85,9 @@
           <li><a href="#">MICE지식교육사이트</a></li>
           <li><a href="#">의사결정지원도구</a></li>
           <li><a href="#">라이선스 문의</a></li>
-          <li><a href="#" download>매뉴얼</a></li>
-          <li><a href="#">공지사항</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -113,153 +120,507 @@
         </ul>
 
         <!-- 목록 -->
-        <ul class="grid-wrap col-5">
-          <li class="grid-item">
-            <div class="list-item new">
-              <a href="#" class="btn-create-new">
-                <span>
-                  <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
-                  <em>새로운 공간 생성</em>
-                </span>
-              </a>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <span class="list-tag">
-                  <i class="icon icon-finish"></i>
-                  <em>공개 완료</em>
-                </span>
-                <a href="#">
-                  <img src="../assets/images/sample/p-sample-thumb-01.jpg" alt="대구 엑스코 켓페어" />
+        <div class="list-wrap">
+          <ul class="grid-wrap col-5">
+            <li class="grid-item">
+              <div class="list-item new">
+                <a href="#" class="btn-create-new">
+                  <span>
+                    <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
+                    <em>새로운 공간 생성</em>
+                  </span>
                 </a>
               </div>
-              <div class="txt-box">
-                <a href="#">대구 엑스코 켓페어</a>
-                <div class="toolTipBox" tabindex="0">
-                  <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <ul>
-                        <li>
-                          <a href="#" target="_blank">입장</a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">공개</a>
-                        </li>
-                        <li>
-                          <a href="#">스마트맵</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
-                        </li>
-                      </ul>
+            </li>
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <span class="list-tag">
+                    <i class="icon icon-finish"></i>
+                    <em>공개 완료</em>
+                  </span>
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-1.jpg" alt="title 1" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 1</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="#">
-                  <img src="../assets/images/sample/p-sample-thumb-02.jpg" alt="신라호텔 로레알기업컨퍼런스" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="#">신라호텔 로레알기업컨퍼런스</a>
-                <div class="toolTipBox" tabindex="0">
-                  <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <ul>
-                        <li>
-                          <a href="#" target="_blank">입장</a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">공개</a>
-                        </li>
-                        <li>
-                          <a href="#">스마트맵</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
-                        </li>
-                      </ul>
+            </li>
+            <li class="grid-item">
+              <div class="list-item disabled">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-2.jpg" alt="title 2" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 2</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0);" onclick="gb.CommonFunction.activate(this);">공간 활성화</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDelete">공간 삭제</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item">
-              <div class="thumb-box">
-                <a href="#">
-                  <img src="../assets/images/sample/p-sample-thumb-03.jpg" alt="코엑스 전시관" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="#">코엑스 전시관</a>
-                <div class="toolTipBox" tabindex="0">
-                  <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <ul>
-                        <li>
-                          <a href="#" target="_blank">입장</a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">공개</a>
-                        </li>
-                        <li>
-                          <a href="#">스마트맵</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            </li>
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-3.jpg" alt="title 3" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 3</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="grid-item">
-            <div class="list-item disabled">
-              <div class="thumb-box">
-                <a href="#">
-                  <img src="../assets/images/sample/p-sample-thumb-04.jpg" alt="가상 페라리 컨퍼런스" />
-                </a>
-              </div>
-              <div class="txt-box">
-                <a href="#">가상 페라리 컨퍼런스</a>
-                <div class="toolTipBox" tabindex="0">
-                  <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
-                  <div class="toolTip">
-                    <div>
-                      <ul>
-                        <li>
-                          <a href="javascript:void(0);" onclick="gb.CommonFunction.activate(this);">공간 활성화</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDelete">공간 삭제</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            </li>
 
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-4.jpg" alt="title 4" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 4</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-        </ul>
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-5.jpg" alt="title 5" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 5</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-6.jpg" alt="title 6" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 6</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-7.jpg" alt="title 7" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 7</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-8.jpg" alt="title 8" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 8</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-9.jpg" alt="title 9" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 9</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-10.jpg" alt="title 10" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 10</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-11.jpg" alt="title 11" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 11</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-12.jpg" alt="title 12" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 12</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-13.jpg" alt="title 13" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 13</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-14.jpg" alt="title 14" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 14</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="#" target="_blank">입장</a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">공간 비활성화</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
 
         <!-- 모달 -->
 
@@ -307,7 +668,7 @@
         </div>
       </div>
     </div>
-    <a href="#" target="_blank" class="btn-manual">
+    <a href="../manual/list.html" class="btn-manual">
       <em class="hidden-txt">매뉴얼 바로가기</em>
       <img src="../assets/images/img-manual.png" alt="" />
     </a>

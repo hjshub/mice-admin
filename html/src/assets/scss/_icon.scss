@@ -1,74 +1,92 @@
-  @mixin icon { display: inline-block; background-image: url($sprite-url); background-repeat: no-repeat; background-size:176px
-  174px; } .icon { @include icon; }
+  @mixin icon { display: inline-block; background-image: url($sprite-url); background-repeat: no-repeat; background-size:196px
+  175px; } .icon { @include icon; }
 
-  @mixin icon-add--hover{ width:16px; height:16px; background-position:-137px
-  -134px; } .icon-add--hover
+  @mixin icon-add--hover{ width:16px; height:16px; background-position:-160px
+  -135px; } .icon-add--hover
   { @include icon-add--hover; }
   @mixin icon-add--tit{ width:22px; height:22px; background-position:-130px
-  -54px; } .icon-add--tit
+  -29px; } .icon-add--tit
   { @include icon-add--tit; }
-  @mixin icon-add{ width:16px; height:16px; background-position:-160px
-  0px; } .icon-add
+  @mixin icon-add{ width:16px; height:16px; background-position:0px
+  -159px; } .icon-add
   { @include icon-add; }
-  @mixin icon-arrow-down{ width:10px; height:6px; background-position:-160px
-  -117px; } .icon-arrow-down
+  @mixin icon-arrow-down-gr{ width:10px; height:6px; background-position:-184px
+  -27px; } .icon-arrow-down-gr
+  { @include icon-arrow-down-gr; }
+  @mixin icon-arrow-down{ width:10px; height:6px; background-position:-184px
+  -38px; } .icon-arrow-down
   { @include icon-arrow-down; }
-  @mixin icon-arrow-right{ width:6px; height:10px; background-position:-160px
-  -128px; } .icon-arrow-right
-  { @include icon-arrow-right; }
-  @mixin icon-arrow-up{ width:10px; height:6px; background-position:-160px
-  -143px; } .icon-arrow-up
+  @mixin icon-arrow-up-gr{ width:10px; height:6px; background-position:-184px
+  -49px; } .icon-arrow-up-gr
+  { @include icon-arrow-up-gr; }
+  @mixin icon-arrow-up{ width:10px; height:6px; background-position:-184px
+  -60px; } .icon-arrow-up
   { @include icon-arrow-up; }
-  @mixin icon-build--hover{ width:17px; height:17px; background-position:-129px
-  -108px; } .icon-build--hover
+  @mixin icon-board--tit{ width:20px; height:19px; background-position:-159px
+  -25px; } .icon-board--tit
+  { @include icon-board--tit; }
+  @mixin icon-build--hover{ width:17px; height:17px; background-position:-26px
+  -135px; } .icon-build--hover
   { @include icon-build--hover; }
-  @mixin icon-build--tit{ width:20px; height:20px; background-position:0px
-  -134px; } .icon-build--tit
+  @mixin icon-build--tit{ width:20px; height:20px; background-position:-159px
+  0px; } .icon-build--tit
   { @include icon-build--tit; }
-  @mixin icon-build{ width:17px; height:17px; background-position:-25px
-  -134px; } .icon-build
+  @mixin icon-build{ width:17px; height:17px; background-position:-48px
+  -135px; } .icon-build
   { @include icon-build; }
+  @mixin icon-calendar{ width:18px; height:18px; background-position:-159px
+  -49px; } .icon-calendar
+  { @include icon-calendar; }
+  @mixin icon-checked{ width:9px; height:7px; background-position:-184px
+  -15px; } .icon-checked
+  { @include icon-checked; }
   @mixin icon-create-new{ width:61px; height:61px; background-position:0px
   0px; } .icon-create-new
   { @include icon-create-new; }
-  @mixin icon-dot--hover{ width:19px; height:6px; background-position:-64px
-  -95px; } .icon-dot--hover
+  @mixin icon-delete{ width:13px; height:13px; background-position:-141px
+  -108px; } .icon-delete
+  { @include icon-delete; }
+  @mixin icon-dot--hover{ width:19px; height:6px; background-position:-159px
+  -118px; } .icon-dot--hover
   { @include icon-dot--hover; }
-  @mixin icon-dot{ width:19px; height:6px; background-position:-88px
+  @mixin icon-dot{ width:19px; height:6px; background-position:-64px
   -95px; } .icon-dot
   { @include icon-dot; }
-  @mixin icon-eraser--hover{ width:25px; height:22px; background-position:-130px
-  0px; } .icon-eraser--hover
+  @mixin icon-eraser--hover{ width:25px; height:22px; background-position:0px
+  -108px; } .icon-eraser--hover
   { @include icon-eraser--hover; }
-  @mixin icon-eraser{ width:25px; height:22px; background-position:-130px
-  -27px; } .icon-eraser
+  @mixin icon-eraser{ width:25px; height:22px; background-position:-30px
+  -108px; } .icon-eraser
   { @include icon-eraser; }
-  @mixin icon-finish{ width:14px; height:14px; background-position:-160px
-  -61px; } .icon-finish
+  @mixin icon-finish{ width:14px; height:14px; background-position:-107px
+  -159px; } .icon-finish
   { @include icon-finish; }
-  @mixin icon-help{ width:18px; height:18px; background-position:-106px
-  -108px; } .icon-help
+  @mixin icon-help{ width:18px; height:18px; background-position:-159px
+  -72px; } .icon-help
   { @include icon-help; }
-  @mixin icon-home{ width:14px; height:13px; background-position:-160px
-  -99px; } .icon-home
+  @mixin icon-home{ width:14px; height:13px; background-position:-145px
+  -159px; } .icon-home
   { @include icon-home; }
-  @mixin icon-map--hover{ width:17px; height:15px; background-position:0px
+  @mixin icon-map--hover{ width:17px; height:15px; background-position:-21px
   -159px; } .icon-map--hover
   { @include icon-map--hover; }
-  @mixin icon-map--tit{ width:22px; height:19px; background-position:-53px
+  @mixin icon-map--tit{ width:22px; height:19px; background-position:-114px
   -108px; } .icon-map--tit
   { @include icon-map--tit; }
-  @mixin icon-map{ width:17px; height:15px; background-position:-22px
+  @mixin icon-map{ width:17px; height:15px; background-position:-43px
   -159px; } .icon-map
   { @include icon-map; }
+  @mixin icon-new{ width:24px; height:24px; background-position:-130px
+  0px; } .icon-new
+  { @include icon-new; }
   @mixin icon-notice--hover-2x{ width:59px; height:59px; background-position:-66px
   0px; } .icon-notice--hover-2x
   { @include icon-notice--hover-2x; }
-  @mixin icon-notice--hover{ width:17px; height:17px; background-position:-47px
-  -134px; } .icon-notice--hover
+  @mixin icon-notice--hover{ width:17px; height:17px; background-position:-70px
+  -135px; } .icon-notice--hover
   { @include icon-notice--hover; }
-  @mixin icon-notice{ width:17px; height:17px; background-position:-69px
-  -134px; } .icon-notice
+  @mixin icon-notice{ width:17px; height:17px; background-position:-92px
+  -135px; } .icon-notice
   { @include icon-notice; }
   @mixin icon-palette--hover{ width:25px; height:24px; background-position:-64px
   -66px; } .icon-palette--hover
@@ -77,32 +95,50 @@
   -66px; } .icon-palette
   { @include icon-palette; }
   @mixin icon-pen--hover{ width:21px; height:21px; background-position:-130px
-  -81px; } .icon-pen--hover
+  -56px; } .icon-pen--hover
   { @include icon-pen--hover; }
-  @mixin icon-pen{ width:21px; height:21px; background-position:0px
-  -108px; } .icon-pen
+  @mixin icon-pen{ width:21px; height:21px; background-position:-130px
+  -82px; } .icon-pen
   { @include icon-pen; }
-  @mixin icon-pub--hover{ width:16px; height:15px; background-position:-160px
-  -21px; } .icon-pub--hover
+  @mixin icon-pg-first{ width:12px; height:10px; background-position:-164px
+  -159px; } .icon-pg-first
+  { @include icon-pg-first; }
+  @mixin icon-pg-last{ width:12px; height:10px; background-position:-184px
+  0px; } .icon-pg-last
+  { @include icon-pg-last; }
+  @mixin icon-pg-next{ width:6px; height:10px; background-position:-184px
+  -71px; } .icon-pg-next
+  { @include icon-pg-next; }
+  @mixin icon-pg-prev{ width:6px; height:10px; background-position:-184px
+  -86px; } .icon-pg-prev
+  { @include icon-pg-prev; }
+  @mixin icon-pub--hover{ width:16px; height:15px; background-position:-65px
+  -159px; } .icon-pub--hover
   { @include icon-pub--hover; }
-  @mixin icon-pub--tit{ width:21px; height:19px; background-position:-80px
-  -108px; } .icon-pub--tit
+  @mixin icon-pub--tit{ width:21px; height:19px; background-position:0px
+  -135px; } .icon-pub--tit
   { @include icon-pub--tit; }
-  @mixin icon-pub{ width:16px; height:15px; background-position:-160px
-  -41px; } .icon-pub
+  @mixin icon-pub{ width:16px; height:15px; background-position:-86px
+  -159px; } .icon-pub
   { @include icon-pub; }
   @mixin icon-qna{ width:59px; height:37px; background-position:0px
   -66px; } .icon-qna
   { @include icon-qna; }
-  @mixin icon-refresh--hover{ width:18px; height:16px; background-position:-91px
-  -134px; } .icon-refresh--hover
+  @mixin icon-refresh--hover{ width:18px; height:16px; background-position:-114px
+  -135px; } .icon-refresh--hover
   { @include icon-refresh--hover; }
-  @mixin icon-refresh--tit{ width:22px; height:20px; background-position:-26px
+  @mixin icon-refresh--tit{ width:22px; height:20px; background-position:-60px
   -108px; } .icon-refresh--tit
   { @include icon-refresh--tit; }
-  @mixin icon-refresh{ width:18px; height:16px; background-position:-114px
-  -134px; } .icon-refresh
+  @mixin icon-refresh{ width:18px; height:16px; background-position:-137px
+  -135px; } .icon-refresh
   { @include icon-refresh; }
-  @mixin icon-signout{ width:14px; height:14px; background-position:-160px
-  -80px; } .icon-signout
+  @mixin icon-signout{ width:14px; height:14px; background-position:-126px
+  -159px; } .icon-signout
   { @include icon-signout; }
+  @mixin icon-theme--tit{ width:22px; height:20px; background-position:-87px
+  -108px; } .icon-theme--tit
+  { @include icon-theme--tit; }
+  @mixin icon-time{ width:18px; height:18px; background-position:-159px
+  -95px; } .icon-time
+  { @include icon-time; }

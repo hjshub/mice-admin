@@ -9,13 +9,14 @@
   <meta name="Description" content="" />
 
 
-  <title>메인 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+  <title>FAQ | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
 
-  <script src="assets/js/lib.js"></script>
-  <script defer src="assets/js/common.js"></script>
+  <script src="../assets/js/lib.js"></script>
+  <script defer src="../assets/js/common.js"></script>
 
-  <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 
 </head>
 
@@ -27,7 +28,7 @@
       <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
     </dd>
     <dd>
-      <a href="#contents"><em>본문으로 바로가기</em></a>
+      <a href="#container"><em>본문으로 바로가기</em></a>
     </dd>
   </dl>
   <!-- // 건너띄기 링크 -->
@@ -72,6 +73,11 @@
               <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
             </a>
           </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="sub-menu">
@@ -79,8 +85,9 @@
           <li><a href="#">MICE지식교육사이트</a></li>
           <li><a href="#">의사결정지원도구</a></li>
           <li><a href="#">라이선스 문의</a></li>
-          <li><a href="#" download>매뉴얼</a></li>
-          <li><a href="#">공지사항</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -98,16 +105,65 @@
       <!-- 타이틀 -->
       <header class="heading-title-Wrap">
         <h2>
-          <i class="icon icon-add_1_5x"></i>
-          &nbsp;&nbsp;새로운 맵 생성
+          <i class="icon icon-board--tit"></i>
+          &nbsp;FAQ
         </h2>
         <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
       </header>
 
       <div class="contents">
-        <!-- 목록 -->
+        <!-- 등록 -->
+        <div class="form-wrap">
+          <dl class="table">
+            <dt>제목</dt>
+            <dd>
+              <div class="text-wrap">
+                <input type="text" placeholder="제목을 입력해주세요" />
+              </div>
+            </dd>
+          </dl>
+          <dl class="table">
+            <dt>분류</dt>
+            <dd>
+              <div class="select-wrap">
+                <select class="wide" title="노출 여부" name="" id="">
+                  <option value="default" disabled selected>선택해주세요</option>
+                  <option value="a">분류</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl class="table">
+            <dt>노출 여부</dt>
+            <dd>
+              <div class="select-wrap">
+                <select class="wide" title="노출 여부" name="" id="">
+                  <option value="a">노출</option>
+                  <option value="b">비노출</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl class="table v-top">
+            <dt>내용</dt>
+            <dd>
+              <div class="text-wrap">
+                <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
+              </div>
+            </dd>
+          </dl>
+          <div class="btn-wrapper">
+            <button type="button"><em>삭제</em></button>
+            <button type="button" class="btn-green"><em>등록</em></button>
+          </div>
+        </div>
       </div>
     </div>
+    <a href="../manual/list.html" class="btn-manual">
+      <em class="hidden-txt">매뉴얼 바로가기</em>
+      <img src="../assets/images/img-manual.png" alt="" />
+    </a>
+
   </main>
   <!-- E #container -->
 </body>

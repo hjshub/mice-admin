@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="Author" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+
+
+  <title>공간 테마 정보 관리 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+
+  <script src="../assets/js/lib.js"></script>
+  <script defer src="../assets/js/common.js"></script>
+
+  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery.timepicker.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- 건너띄기 링크 -->
+  <dl id="skipNavigation">
+    <dt class="hidden-txt">바로가기 및 건너띄기 링크</dt>
+    <dd>
+      <a href="#snb"><em>사이드 메뉴 바로가기</em></a>
+    </dd>
+    <dd>
+      <a href="#container"><em>본문으로 바로가기</em></a>
+    </dd>
+  </dl>
+  <!-- // 건너띄기 링크 -->
+
+
+  <!-- SNB -->
+  <aside class="side" id="snb">
+    <header class="side-header">
+      <h1>
+        <span>포스트 코로나 대응 MICE</span><br />
+        <span>온&middot;오프라인연계전시.컨벤션</span><br />
+        <strong>통합 지원 서비스 플랫폼</strong>
+      </h1>
+      <div class="user">
+        <span class="user-thumb"> <img src="../assets/images/sample/profile-thumbnail.png" alt="프로필" /> </span><br />
+        <span class="user-name">PCNUSER01</span><br />
+        <button class="sign-out" type="button">
+          <em><i class="icon icon-signout f-icon"></i>로그아웃</em>
+        </button>
+      </div>
+    </header>
+    <div class="side-mid customedScroll">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="../create/list.html">
+              <span><i class="icon icon-add f-icon"></i>새로운 맵 생성</span>
+            </a>
+          </li>
+          <li>
+            <a href="../mymap/list.html">
+              <span><i class="icon icon-map f-icon"></i>마이맵</span>
+            </a>
+          </li>
+          <li>
+            <a href="../publishing/list.html">
+              <span><i class="icon icon-pub f-icon"></i>퍼블리싱</span>
+            </a>
+          </li>
+          <li>
+            <a href="../smartbuild/list_01.html">
+              <span><i class="icon icon-build f-icon"></i>스마트 빌드</span>
+            </a>
+          </li>
+          <li>
+            <a href="../theme/list.html">
+              <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="#">MICE지식교육사이트</a></li>
+          <li><a href="#">의사결정지원도구</a></li>
+          <li><a href="#">라이선스 문의</a></li>
+          <li><a href="../manual/list.html">매뉴얼</a></li>
+          <li><a href="../notice/user_list.html"">공지사항</a></li>
+        <li><a href=" ../faq/user_list.html"">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-footer">
+      <button class="qna" type="button"><i class="icon icon-qna f-icon"></i>문의하기</button>
+      <span>v.1.2</span>
+    </div>
+  </aside>
+
+
+  <!-- 본문 -->
+  <!-- S #container -->
+  <main id="container">
+    <div class="inner">
+      <!-- 타이틀 -->
+      <header class="heading-title-Wrap">
+        <h2>
+          <i class="icon icon-theme--tit"></i>
+          &nbsp;공간 테마 정보 관리
+        </h2>
+        <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
+      </header>
+
+      <div class="contents">
+        <!-- 검색 -->
+        <div class="form-wrap">
+          <dl class="table v-top">
+            <dt>이름</dt>
+            <dd>
+              <div class="text-wrap">
+                <input type="text" placeholder="검색어를 입력해주세요." value="엑스코 서관 전시장(1)" />
+              </div>
+              <div class="thumbNail">
+                <img src="../assets/images/sample/sample-thumb-11.jpg" alt="공간테마 샘플 이미지" />
+                <div class="btn-wrapper inline">
+                  <button class="sm btn-purple"><em>새창에서 공간테마 보기</em></button>
+                </div>
+              </div>
+            </dd>
+          </dl>
+
+          <div class="grid-wrap col-2">
+            <dl class="table">
+              <dt>카테고리</dt>
+              <dd>
+                <div class="radio-wrap">
+                  <span>
+                    <input type="radio" name="selectCategory" id="selectCategory_a" data-name="newTheme" checked />
+                    <label for="selectCategory_a">새로운 공간 테마</label>
+                  </span>
+                  <span>
+                    <input type="radio" name="selectCategory" id="selectCategory_b" data-name="smartBuild" />
+                    <label for="selectCategory_b">스마트빌드</label>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="table">
+              <dt>행사 스타일</dt>
+              <dd>
+                <div class="radio-wrap">
+                  <span>
+                    <input type="radio" name="eventStyle" id="eventStyle_a" checked />
+                    <label for="eventStyle_a">디지털 트윈</label>
+                  </span>
+                  <span>
+                    <input type="radio" name="eventStyle" id="eventStyle_b" />
+                    <label for="eventStyle_b">가상 컨벤션</label>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+          </div>
+
+          <!-- 새로운 공간 테마 -->
+          <div class="category" id="newTheme">
+            <div class="grid-wrap col-2">
+              <dl class="table">
+                <dt>행사 장소</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="행사 장소" name="" id="">
+                      <option value="default" disabled selected>장소를 선택해주세요</option>
+                      <option value="all">전체</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>
+                  새로운 공간<br />
+                  테마 여부
+                </dt>
+                <dd>
+                  <div class="radio-wrap">
+                    <span>
+                      <input type="radio" name="a" id="a1" checked />
+                      <label for="a1">설정</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="a" id="a2" />
+                      <label for="a2">설정완료</label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- 스마트 빌드 -->
+          <div class="category" id="smartBuild" style="display: none">
+            <div class="grid-wrap col-2">
+              <dl class="table">
+                <dt>행사 종류</dt>
+                <dd>
+                  <div class="radio-wrap">
+                    <span>
+                      <input type="radio" name="eventType" id="eventType_a" data-name="conference" checked />
+                      <label for="eventType_a">컨퍼런스</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="eventType" id="eventType_b" data-name="exhibition" />
+                      <label for="eventType_b">전시</label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="table">
+                <dt>행사 장소</dt>
+                <dd>
+                  <div class="select-wrap">
+                    <select class="wide" title="행사 장소" name="" id="">
+                      <option value="default" disabled selected>장소를 선택해주세요</option>
+                      <option value="all">전체</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="eventType" id="conference">
+              <div class="grid-wrap col-2">
+                <dl class="table">
+                  <dt>컨퍼런스<br />인원수</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="행사 장소" name="" id="">
+                        <option value="default" disabled selected>인원수를 선택해주세요</option>
+                        <option value="all">전체</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>테이블<br />스타일</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="행사 장소" name="" id="">
+                        <option value="default" disabled selected>테이블 스타일을 선택해주세요</option>
+                        <option value="all">전체</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="eventType" id="exhibition" style="display: none">
+              <div class="grid-wrap col-2">
+                <dl class="table">
+                  <dt>전시 부스수</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="행사 장소" name="" id="">
+                        <option value="default" disabled selected>부스수를 선택해주세요</option>
+                        <option value="all">전체</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="table">
+                  <dt>부스 스타일</dt>
+                  <dd>
+                    <div class="select-wrap">
+                      <select class="wide" title="행사 장소" name="" id="">
+                        <option value="default" disabled selected>부스 스타일을 선택해주세요</option>
+                        <option value="all">전체</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="grid-wrap col-2">
+              <dl class="table">
+                <dt>스마트빌드<br />설정여부</dt>
+                <dd>
+                  <div class="radio-wrap">
+                    <span>
+                      <input type="radio" name="b" id="b1" checked />
+                      <label for="b1">설정</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="b" id="b2" />
+                      <label for="b2">설정완료</label>
+                    </span>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="btn-wrapper">
+            <button type="button" class="btn-green"><em>저장</em></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="../manual/list.html" class="btn-manual">
+      <em class="hidden-txt">매뉴얼 바로가기</em>
+      <img src="../assets/images/img-manual.png" alt="" />
+    </a>
+
+  </main>
+  <!-- E #container -->
+
+  <script>
+    const radio = document.querySelectorAll('input[type=radio][name=selectCategory]');
+    const radio2 = document.querySelectorAll('input[type=radio][name=eventType]');
+
+    // 카테고리 선택 (새로운 공간 테마, 스마트 빌드)
+    radio.forEach((el) => {
+      el.addEventListener('change', function() {
+        const cateList = document.querySelectorAll('.category');
+        const cateList_ = document.querySelectorAll('.category#' + this.getAttribute('data-name'));
+
+        for (let i = 0; i < cateList.length; i++) {
+          cateList[i].style.display = 'none';
+        }
+
+        for (let k = 0; k < cateList_.length; k++) {
+          cateList_[k].style.display = 'block';
+        }
+      });
+    });
+
+    // 행사종류 선택 (컨퍼런스, 전시)
+    radio2.forEach((el) => {
+      el.addEventListener('change', function() {
+        const cateList = document.querySelectorAll('.eventType');
+        const cateList_ = document.querySelectorAll('.eventType#' + this.getAttribute('data-name'));
+
+        for (let i = 0; i < cateList.length; i++) {
+          cateList[i].style.display = 'none';
+        }
+
+        for (let k = 0; k < cateList_.length; k++) {
+          cateList_[k].style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

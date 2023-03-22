@@ -6,6 +6,11 @@
   display: flex;
 }
 
+@mixin align-content($val) {
+  -ms-flex-line-pack: $val;
+  align-content: $val;
+}
+
 @mixin align-items($val) {
   -webkit-box-align: $val;
   -ms-flex-align: $val;
@@ -86,27 +91,25 @@
 
 @mixin ellipsis {
   text-overflow: ellipsis;
-  word-break: keep-all;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 100%;
 }
 
 @mixin line-clamp2 {
-  display: inline-block;
   display: -webkit-box;
-  word-break: keep-all;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  white-space: normal;
 }
 
 @mixin line-clamp3 {
-  display: inline-block;
   display: -webkit-box;
-  word-break: keep-all;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  white-space: normal;
 }
 
 @mixin hiddenText {

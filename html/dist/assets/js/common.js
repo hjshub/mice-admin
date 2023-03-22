@@ -42,16 +42,12 @@ gb.CommonFunction = (function () {
       const trg = $(this);
       const modalName = trg.data('modal-name');
 
-      $('.modal').removeClass('zoomIn').stop().fadeOut(100);
+      $('.modal').removeClass('zoomIn');
       $('.dimmed').remove();
 
       trg.addClass('selected');
       trg.closest('.list-item').addClass('on');
-      $('.modal#modal-' + modalName)
-        .stop()
-        .fadeIn(100, function () {
-          $(this).addClass('zoomIn');
-        });
+      $('.modal#modal-' + modalName).addClass('zoomIn');
 
       gb.body.append('<div class="dimmed btn-close-modal"></div>');
       gb.body.css({
@@ -68,12 +64,8 @@ gb.CommonFunction = (function () {
     // 공통 모달 닫기
     gb.btnActiveModal.removeClass('selected');
     $('.list-item').removeClass('on');
-    $('.modal')
-      .removeClass('zoomIn')
-      .stop()
-      .fadeOut(100, function () {
-        $('.dimmed').remove();
-      });
+    $('.modal').removeClass('zoomIn');
+    $('.dimmed').remove();
 
     gb.body.css({
       height: 'auto',
@@ -195,7 +187,7 @@ gb.CommonFunction = (function () {
     $(t).closest('.list-item').removeClass('disabled');
   };
   const niceSelect = () => {
-    $('.select-wrap select').niceSelect();
+    $('.select-wrap:not(.default) select').niceSelect();
   };
   const showInput = () => {
     const input = document.querySelectorAll('.input');
@@ -206,6 +198,62 @@ gb.CommonFunction = (function () {
       });
     });
   };
+  const createCalendar = function () {
+    const defaultOption = {
+      closeText: '닫기',
+      currentText: '오늘',
+      prevText: '이전 달',
+      nextText: '다음 달',
+      monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+      weekHeader: '주',
+      yearSuffix: '년',
+    };
+
+    $.datepicker.setDefaults(defaultOption);
+
+    $('.calendar > input[type=text]').datepicker({
+      showOn: 'both',
+      dateFormat: 'yy-mm-dd',
+      minDate: 'd',
+    });
+  };
+  const createTimePicker = function () {
+    $('.time > input[type=text]').timepicker({
+      timeFormat: 'hh:mm p',
+      interval: 60,
+      minTime: '00:00',
+      maxTime: '12:00pm',
+      defaultTime: '06:00',
+      startTime: '06:00',
+      dynamic: false,
+      dropdown: true,
+      scrollbar: true,
+    });
+  };
+  const listDropDown = function () {
+    gb.btnDropDown = $('.btn-dropDown');
+
+    gb.btnDropDown.on('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const trg = $(this);
+
+      if (trg.hasClass('on')) {
+        trg.removeClass('on');
+        $('.dropDown').stop().slideUp(300);
+      } else {
+        gb.btnDropDown.not(trg).removeClass('on');
+        $('.dropDown').stop().slideUp(300);
+        trg.addClass('on');
+        trg.closest('li').find('.dropDown').stop().slideDown(300);
+      }
+    });
+  };
   const init = () => {
     snb();
     modalOn();
@@ -213,6 +261,9 @@ gb.CommonFunction = (function () {
     toolTipEdit();
     niceSelect();
     showInput();
+    createCalendar();
+    createTimePicker();
+    listDropDown();
   };
 
   return {

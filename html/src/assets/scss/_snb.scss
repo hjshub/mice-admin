@@ -170,34 +170,31 @@
     }
 
     .sub-menu {
-      padding: 35px 0 0;
+      padding: 35px 0;
 
       ul {
         li {
+          padding-left: 40px;
           a {
-            display: block;
-            padding-left: 40px;
-            line-height: 50px;
-            border-radius: 15px;
+            display: inline-block;
+            line-height: 1.4;
             color: $gray2;
             @include transition(all 0.3s ease-in-out);
 
             &:hover,
             &:focus {
-              background-color: $green;
               color: $white;
             }
           }
 
           &.on {
             a {
-              background-color: $green;
               color: $white;
             }
           }
 
           & + li {
-            margin-top: 5px;
+            margin-top: 30px;
           }
         }
       }

@@ -28,12 +28,32 @@
 
         <div class="contents">
           <!-- 목록 -->
-          <ul class="grid-wrap col-5">
-            @@include('../include/createNewMap-list.html')
-          </ul>
+          <div class="list-wrap">
+            <ul class="grid-wrap col-5">
+              @@for(var i = 1; i < 15; i++){
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal">
+                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="샘플 이미지 `+i+`" />
+                    </a>
+                  </div>
+                  <div class="txt-box">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="createNewModal"
+                      ><em>가상 미팅룸 `+i+`</em></a
+                    >
+                    <div class="toolTipBox tipInfo _hover" tabindex="0">
+                      <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                      @@include('../include/tooltip.html')
+                    </div>
+                  </div>
+                </div>
+              </li>
+              }
+            </ul>
+          </div>
 
           <!-- 모달 -->
-
           <!-- 새로운 맵 생성 -->
           <div class="modal animate fast zoomOut" id="modal-createNewModal">
             <div class="modal-header">

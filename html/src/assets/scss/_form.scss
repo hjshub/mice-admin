@@ -25,6 +25,10 @@ button {
     background-color: $gray3;
     border-radius: 10px;
 
+    @include _bp(1680px) {
+      min-width: 120px;
+    }
+
     &.sm {
       line-height: 40px;
       border-radius: 5px;
@@ -565,6 +569,10 @@ button {
 
   &.md {
     width: 500px;
+
+    @include _bp(1680px) {
+      width: 350px;
+    }
   }
 
   &.sm {
@@ -591,6 +599,12 @@ button {
       width: -webkit-calc(100% - 200px);
       width: -moz-calc(100% - 200px);
       width: calc(100% - 200px);
+
+      @include _bp(1680px) {
+        width: -webkit-calc(100% - 130px);
+        width: -moz-calc(100% - 130px);
+        width: calc(100% - 130px);
+      }
     }
     .btn-wrapper {
       margin-left: 10px;

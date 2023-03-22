@@ -3,7 +3,7 @@
   <head>
     @@include('../include/head.html')
 
-    <title>퍼블리싱 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+    <title>마이 룸 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
 
     @@include('../include/header_sub.html')
   </head>
@@ -21,7 +21,7 @@
         <header class="heading-title-Wrap">
           <h2>
             <i class="icon icon-pub--tit"></i>
-            &nbsp;퍼블리싱
+            &nbsp;마이 룸
           </h2>
           <span class="desc">직접 제작하는 메타버스 퍼블리싱 하는 공간입니다.</span>
         </header>
@@ -29,9 +29,9 @@
         <div class="contents">
           <!-- 탭 메뉴 -->
           <ul class="tab-menu">
-            <li><a href="">활성 공간</a></li>
-            <li><a href="">비활성 공간</a></li>
-            <li class="active"><a href="">전체 공간</a></li>
+            <li><a href="">활성 룸</a></li>
+            <li><a href="">비활성 룸</a></li>
+            <li class="active"><a href="">전체 룸</a></li>
           </ul>
 
           <!-- 목록 -->
@@ -42,7 +42,7 @@
                   <a href="#" class="btn-create-new">
                     <span>
                       <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
-                      <em>새로운 공간 생성</em>
+                      <em>새로운 룸 생성</em>
                     </span>
                   </a>
                 </div>
@@ -61,7 +61,7 @@
                   <div class="txt-box">
                     <a href="#"><em>title 1</em></a>
                     <div class="toolTipBox" tabindex="0">
-                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                       @@include('../include/tooltip4.html')
                     </div>
                   </div>
@@ -77,7 +77,7 @@
                   <div class="txt-box">
                     <a href="#"><em>title 2</em></a>
                     <div class="toolTipBox" tabindex="0">
-                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                       @@include('../include/tooltip5.html')
                     </div>
                   </div>
@@ -94,7 +94,7 @@
                   <div class="txt-box">
                     <a href="#"><em>title `+i+`</em></a>
                     <div class="toolTipBox" tabindex="0">
-                      <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                      <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                       @@include('../include/tooltip4.html')
                     </div>
                   </div>
@@ -106,20 +106,20 @@
 
           <!-- 모달 -->
 
-          <!-- 공간 비활성화 -->
+          <!-- 룸 비활성화 -->
           <div class="modal animate fast zoomOut" id="modal-areaDisabled">
             <div class="modal-header">
               <h4>
-                <span class="hidden-txt">공간 비활성화</span>
+                <span class="hidden-txt">룸 비활성화</span>
                 <i class="icon icon-notice--hover-2x"></i>
               </h4>
             </div>
             <div class="modal-body">
               <div class="modal-contents">
-                <strong>공간을 비활성하시겠습니까?</strong><br />
+                <strong>룸을 비활성하시겠습니까?</strong><br />
                 <span>
-                  비활성화된 공간은 수정이 불가능하며<br />
-                  비활성맵 리스트에서 확인할 수 있습니다.
+                  비활성화된 룸은 수정이 불가능하며<br />
+                  비활성 룸 리스트에서 확인할 수 있습니다
                 </span>
               </div>
               <div class="btn-wrapper col-2">
@@ -129,18 +129,18 @@
             </div>
           </div>
 
-          <!-- 공간 삭제 -->
+          <!-- 룸 삭제 -->
           <div class="modal animate fast zoomOut" id="modal-areaDelete">
             <div class="modal-header">
               <h4>
-                <span class="hidden-txt">공간 삭제</span>
+                <span class="hidden-txt">룸 삭제</span>
                 <i class="icon icon-notice--hover-2x"></i>
               </h4>
             </div>
             <div class="modal-body">
               <div class="modal-contents">
-                <strong>공간을 삭제하시겠습니까?</strong><br />
-                <span> 삭제한 공간은 복원할 수 없습니다. </span>
+                <strong>룸을 삭제하시겠습니까?</strong><br />
+                <span>삭제한 룸은 복원할 수 없습니다</span>
               </div>
               <div class="btn-wrapper col-2">
                 <button type="button" class="btn-close-modal"><em>취소</em></button>

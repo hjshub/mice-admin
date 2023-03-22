@@ -9,7 +9,7 @@
   <meta name="Description" content="" />
 
 
-  <title>마이맵 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+  <title>마이 룸 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
 
   <script src="../assets/js/lib.js"></script>
   <script defer src="../assets/js/common.js"></script>
@@ -55,17 +55,17 @@
         <ul>
           <li>
             <a href="../create/list.html">
-              <span><i class="icon icon-add f-icon"></i>새로운 맵 생성</span>
+              <span><i class="icon icon-add f-icon"></i>새로운 공간 테마 생성</span>
             </a>
           </li>
           <li>
-            <a href="../mymap/list.html">
-              <span><i class="icon icon-map f-icon"></i>마이맵</span>
+            <a href="../mytheme/list.html">
+              <span><i class="icon icon-map f-icon"></i>나의 공간 테마</span>
             </a>
           </li>
           <li>
-            <a href="../publishing/list.html">
-              <span><i class="icon icon-pub f-icon"></i>퍼블리싱</span>
+            <a href="../myroom/list.html">
+              <span><i class="icon icon-pub f-icon"></i>마이 룸</span>
             </a>
           </li>
           <li>
@@ -74,7 +74,7 @@
             </a>
           </li>
           <li>
-            <a href="../theme/list.html">
+            <a href="../themeinfo/list.html">
               <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
             </a>
           </li>
@@ -105,55 +105,31 @@
       <!-- 타이틀 -->
       <header class="heading-title-Wrap">
         <h2>
-          <i class="icon icon-map--tit"></i>
-          &nbsp;마이맵
+          <i class="icon icon-pub--tit"></i>
+          &nbsp;마이 룸
         </h2>
-        <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
+        <span class="desc">직접 제작하는 메타버스 퍼블리싱 하는 공간입니다.</span>
       </header>
 
       <div class="contents">
         <!-- 탭 메뉴 -->
         <ul class="tab-menu">
-          <li><a href="">활성 맵</a></li>
-          <li><a href="">비활성화 맵</a></li>
-          <li class="active"><a href="">전체 맵</a></li>
+          <li><a href="">활성 룸</a></li>
+          <li><a href="">비활성 룸</a></li>
+          <li class="active"><a href="">전체 룸</a></li>
         </ul>
 
         <!-- 목록 -->
         <div class="list-wrap">
           <ul class="grid-wrap col-5">
             <li class="grid-item">
-              <div class="list-item">
-                <div class="thumb-box">
-                  <a href="#">
-                    <img src="../assets/images/sample/sample-thumb-1.jpg" alt="title 1" />
-                  </a>
-                </div>
-                <div class="txt-box">
-                  <a href="#"><em>title 1</em></a>
-                  <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
-                    <div class="toolTip">
-                      <div>
-                        <ul>
-                          <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0);">맵 수정</a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
+              <div class="list-item new">
+                <a href="#" class="btn-create-new">
+                  <span>
+                    <i class="icon icon-create-new"> <em class="hidden-txt">아이콘</em> </i><br />
+                    <em>새로운 룸 생성</em>
+                  </span>
+                </a>
               </div>
             </li>
             <li class="grid-item">
@@ -161,30 +137,30 @@
                 <div class="thumb-box">
                   <span class="list-tag">
                     <i class="icon icon-finish"></i>
-                    <em>퍼블리싱 완료</em>
+                    <em>공개 완료</em>
                   </span>
                   <a href="#">
-                    <img src="../assets/images/sample/sample-thumb-2.jpg" alt="title 2" />
+                    <img src="../assets/images/sample/sample-thumb-1.jpg" alt="title 1" />
                   </a>
                 </div>
                 <div class="txt-box">
-                  <a href="#"><em>title 2</em></a>
+                  <a href="#"><em>title 1</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -198,21 +174,56 @@
               <div class="list-item disabled">
                 <div class="thumb-box">
                   <a href="#">
+                    <img src="../assets/images/sample/sample-thumb-2.jpg" alt="title 2" />
+                  </a>
+                </div>
+                <div class="txt-box">
+                  <a href="#"><em>title 2</em></a>
+                  <div class="toolTipBox" tabindex="0">
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
+                    <div class="toolTip">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0);" onclick="gb.CommonFunction.activate(this);">룸 활성화</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDelete">룸 삭제</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid-item">
+              <div class="list-item">
+                <div class="thumb-box">
+                  <a href="#">
                     <img src="../assets/images/sample/sample-thumb-3.jpg" alt="title 3" />
                   </a>
                 </div>
                 <div class="txt-box">
                   <a href="#"><em>title 3</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" onclick="gb.CommonFunction.activate(this);">맵 활성화</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDelete">맵 삭제</a>
+                            <a href="#" target="_blank">공개</a>
+                          </li>
+                          <li>
+                            <a href="#">스마트맵</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -233,21 +244,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 4</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -268,21 +279,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 5</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -303,21 +314,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 6</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -338,21 +349,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 7</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -373,21 +384,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 8</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -408,21 +419,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 9</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -443,21 +454,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 10</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -478,21 +489,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 11</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -513,21 +524,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 12</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -548,21 +559,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 13</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -583,21 +594,21 @@
                 <div class="txt-box">
                   <a href="#"><em>title 14</em></a>
                   <div class="toolTipBox" tabindex="0">
-                    <i class="icon icon-dot edit"><em class="hidden-txt">맵 편집 도구</em></i>
+                    <i class="icon icon-dot edit"><em class="hidden-txt">마이룸 편집도구</em></i>
                     <div class="toolTip">
                       <div>
                         <ul>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapPublishing">맵 퍼블리싱</a>
+                            <a href="#" target="_blank">입장</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);">맵 수정</a>
+                            <a href="#" target="_blank">공개</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapNameUpdate">맵 이름 변경</a>
+                            <a href="#">스마트맵</a>
                           </li>
                           <li>
-                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="mapDisabled">맵 비활성화</a>
+                            <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaDisabled">룸 비활성화</a>
                           </li>
                         </ul>
                       </div>
@@ -612,63 +623,21 @@
         </div>
 
         <!-- 모달 -->
-        <!-- 맵 퍼블리싱 -->
-        <div class="modal animate fast zoomOut" id="modal-mapPublishing">
+
+        <!-- 룸 비활성화 -->
+        <div class="modal animate fast zoomOut" id="modal-areaDisabled">
           <div class="modal-header">
             <h4>
-              <span class="hidden-txt">맵 퍼블리싱</span>
+              <span class="hidden-txt">룸 비활성화</span>
               <i class="icon icon-notice--hover-2x"></i>
             </h4>
           </div>
           <div class="modal-body">
             <div class="modal-contents">
-              <strong>맵 퍼블리싱을 하시겠습니까?</strong><br />
-              <span>퍼블리싱을 하시면 새로운 공간을<br />
-                생성할 수 있는 맵이 생성됩니다.</span>
-            </div>
-            <div class="btn-wrapper col-2">
-              <button type="button" class="btn-close-modal"><em>취소</em></button>
-              <button type="button" class="btn-green"><em>확인</em></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 맵 이름 변경 -->
-        <div class="modal type2 animate fast zoomOut" id="modal-mapNameUpdate">
-          <div class="modal-header">
-            <h4>
-              <span>맵 이름 변경</span>
-            </h4>
-          </div>
-          <div class="modal-body">
-            <div class="modal-contents">
-              <label for="map-name">맵 이름</label>
-              <span class="txt-byte">
-                <input id="map-name" type="text" value="Kintex_beautycon_005" />
-                <em>(20&#47;40)</em>
-              </span>
-            </div>
-            <div class="btn-wrapper col-2">
-              <button type="button" class="btn-close-modal"><em>취소</em></button>
-              <button type="button" class="btn-green"><em>확인</em></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 맵 삭제 -->
-        <div class="modal animate fast zoomOut" id="modal-mapDelete">
-          <div class="modal-header">
-            <h4>
-              <span class="hidden-txt">맵 삭제</span>
-              <i class="icon icon-notice--hover-2x"></i>
-            </h4>
-          </div>
-          <div class="modal-body">
-            <div class="modal-contents">
-              <strong>맵을 삭제하시겠습니까?</strong><br />
+              <strong>룸을 비활성하시겠습니까?</strong><br />
               <span>
-                삭제한 맵은 복원이 불가능하며,<br />
-                퍼블리싱 템플릿 및 공간도 함께 삭제가 됩니다
+                비활성화된 룸은 수정이 불가능하며<br />
+                비활성 룸 리스트에서 확인할 수 있습니다
               </span>
             </div>
             <div class="btn-wrapper col-2">
@@ -678,19 +647,18 @@
           </div>
         </div>
 
-        <!-- 맵 비활성화 -->
-        <div class="modal animate fast zoomOut" id="modal-mapDisabled">
+        <!-- 룸 삭제 -->
+        <div class="modal animate fast zoomOut" id="modal-areaDelete">
           <div class="modal-header">
             <h4>
-              <span class="hidden-txt">맵 비활성화</span>
+              <span class="hidden-txt">룸 삭제</span>
               <i class="icon icon-notice--hover-2x"></i>
             </h4>
           </div>
           <div class="modal-body">
             <div class="modal-contents">
-              <strong>맵을 비활성화 하시겠습니까?</strong><br />
-              <span>비활성화된 맵은 수정이 불가능하며<br />
-                비활성맵 리스트에서 확인할 수 있습니다</span>
+              <strong>룸을 삭제하시겠습니까?</strong><br />
+              <span>삭제한 룸은 복원할 수 없습니다</span>
             </div>
             <div class="btn-wrapper col-2">
               <button type="button" class="btn-close-modal"><em>취소</em></button>

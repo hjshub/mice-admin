@@ -123,27 +123,74 @@
           <div class="list-wrap">
             <div class="list-header">
               <p class="txt-info">
-                <i class="icon icon-notice"></i>&nbsp; <b>디지털 트윈 &gt; 컨퍼런스</b> 행사의 스마트 조건에 부함하는 <b>3</b>건의
+                <i class="icon icon-notice"></i>&nbsp; <b>디지털 트윈 &gt; 컨퍼런스</b> 행사의 스마트 조건에 부합하는 <b>3</b>건의
                 컨벤션 센터가 조회되었습니다.
               </p>
             </div>
             <ul class="grid-wrap col-5">
-              @@for(var i = 1; i < 15; i++){
               <li class="grid-item">
                 <div class="list-item">
                   <div class="thumb-box">
                     <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate">
-                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="가상 미팅룸 `+i+`" />
+                      <img src="../assets/images/sample/sample-thumb-1.jpg" alt="가상 전시홀 1" />
                     </a>
                   </div>
-                  <div class="txt-box">
+                  <div class="txt-box non-rounded type-02">
                     <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate"
-                      ><em>가상 미팅룸 `+i+`</em></a
+                      ><em>가상 전시홀 1</em></a
                     >
                     <div class="toolTipBox tipInfo _hover" tabindex="0">
                       <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
                       @@include('../include/tooltip.html')
                     </div>
+                  </div>
+                  <div class="info-box"><em>300명, 믹스부스</em></div>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <span class="list-tag">
+                      <i class="icon icon-finish"></i>
+                      <em>설정 완료</em>
+                    </span>
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate">
+                      <img src="../assets/images/sample/sample-thumb-2.jpg" alt="가상 전시홀 2" />
+                    </a>
+                  </div>
+                  <div class="txt-box non-rounded type-02">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate"
+                      ><em>가상 전시홀 2</em></a
+                    >
+                    <div class="toolTipBox tipInfo _hover" tabindex="0">
+                      <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                      @@include('../include/tooltip.html')
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <em>100명, 소형부스</em>
+                  </div>
+                </div>
+              </li>
+              @@for(var i = 3; i < 15; i++){
+              <li class="grid-item">
+                <div class="list-item">
+                  <div class="thumb-box">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate">
+                      <img src="../assets/images/sample/sample-thumb-`+i+`.jpg" alt="가상 전시홀 `+i+`" />
+                    </a>
+                  </div>
+                  <div class="txt-box non-rounded type-02">
+                    <a href="javascript:void(0);" class="btn-active-modal" data-modal-name="areaNameUpdate"
+                      ><em>가상 전시홀 `+i+`</em></a
+                    >
+                    <div class="toolTipBox tipInfo _hover" tabindex="0">
+                      <i class="icon icon-notice"><em class="hidden-txt">설명 툴팁</em></i>
+                      @@include('../include/tooltip.html')
+                    </div>
+                  </div>
+                  <div class="info-box">
+                    <em>100명, 중형부스</em>
                   </div>
                 </div>
               </li>
@@ -152,17 +199,16 @@
           </div>
 
           <!-- 모달 -->
-
-          <!-- 새로운 공간 이름 작성 -->
+          <!-- 새로운 공간 테마 이름 작성 -->
           <div class="modal type2 animate fast zoomOut" id="modal-areaNameUpdate">
             <div class="modal-header">
               <h4>
-                <span>새로운 공간 이름 작성</span>
+                <span>새로운 공간 테마 이름 작성</span>
               </h4>
             </div>
             <div class="modal-body">
               <div class="modal-contents">
-                <label for="map-name">공간 이름</label>
+                <label for="map-name">공간 테마 이름</label>
                 <span class="txt-byte">
                   <input id="map-name" type="text" value="Kintex_beautycon_005" />
                   <em>(20&#47;40)</em>
@@ -186,8 +232,8 @@
             <div class="modal-body">
               <div class="modal-contents">
                 <strong>
-                  새로운 공간이 생성되었습니다.<br />
-                  마이맵 메뉴에서 확인 할 수 있습니다.
+                  새로운 공간테마가 생성되었습니다.<br />
+                  나의 공간 테마에서 확인할 수 있습니다.
                 </strong>
               </div>
               <div class="btn-wrapper col-2">

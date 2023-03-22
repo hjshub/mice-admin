@@ -224,11 +224,11 @@ gb.CommonFunction = (function () {
   const createTimePicker = function () {
     $('.time > input[type=text]').timepicker({
       timeFormat: 'hh:mm p',
-      interval: 60,
+      interval: 10,
       minTime: '00:00',
-      maxTime: '12:00pm',
-      defaultTime: '06:00',
-      startTime: '06:00',
+      maxTime: '23:50',
+      defaultTime: '00:00',
+      startTime: '00:00',
       dynamic: false,
       dropdown: true,
       scrollbar: true,

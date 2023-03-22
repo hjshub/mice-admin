@@ -9,7 +9,7 @@
   <meta name="Description" content="" />
 
 
-  <title>새로운 맵 생성 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
+  <title>새로운 공간 테마 생성 | 포스트 코로나 대응 MICE 온.오프라인연계전시.컨벤션 통합 지원 서비스 플랫폼</title>
 
   <script src="../assets/js/lib.js"></script>
   <script defer src="../assets/js/common.js"></script>
@@ -55,17 +55,17 @@
         <ul>
           <li>
             <a href="../create/list.html">
-              <span><i class="icon icon-add f-icon"></i>새로운 맵 생성</span>
+              <span><i class="icon icon-add f-icon"></i>새로운 공간 테마 생성</span>
             </a>
           </li>
           <li>
-            <a href="../mymap/list.html">
-              <span><i class="icon icon-map f-icon"></i>마이맵</span>
+            <a href="../mytheme/list.html">
+              <span><i class="icon icon-map f-icon"></i>나의 공간 테마</span>
             </a>
           </li>
           <li>
-            <a href="../publishing/list.html">
-              <span><i class="icon icon-pub f-icon"></i>퍼블리싱</span>
+            <a href="../myroom/list.html">
+              <span><i class="icon icon-pub f-icon"></i>마이 룸</span>
             </a>
           </li>
           <li>
@@ -74,7 +74,7 @@
             </a>
           </li>
           <li>
-            <a href="../theme/list.html">
+            <a href="../themeinfo/list.html">
               <span><i class="icon icon-refresh f-icon"></i>공간 테마 정보 관리</span>
             </a>
           </li>
@@ -106,7 +106,7 @@
       <header class="heading-title-Wrap">
         <h2>
           <i class="icon icon-add--tit"></i>
-          &nbsp;새로운 맵 생성
+          &nbsp;새로운 공간 테마 생성
         </h2>
         <span class="desc">기본 메타버스 행사 맵을 생성할 수 있습니다.</span>
       </header>
@@ -568,21 +568,26 @@
         </div>
 
         <!-- 모달 -->
-        <!-- 새로운 맵 생성 -->
-        <div class="modal animate fast zoomOut" id="modal-createNewModal">
+        <!-- 새로운 공간 테마 생성 -->
+        <div class="modal type2 animate fast zoomOut" id="modal-createNewModal">
           <div class="modal-header">
             <h4>
-              <span class="hidden-txt">새로운 맵 생성</span>
-              <i class="icon icon-notice--hover-2x"></i>
+              <span>새로운 공간 테마를 생성하시겠습니까?</span>
             </h4>
           </div>
           <div class="modal-body">
             <div class="modal-contents">
-              <strong>새로운 맵을 생성하시겠습니까?</strong>
+              <label for="map-name">공간 테마 이름</label>
+              <span class="txt-byte">
+                <input id="map-name" type="text" value="Kintex_beautycon_005" />
+                <em>(20&#47;40)</em>
+              </span>
             </div>
             <div class="btn-wrapper col-2">
               <button type="button" class="btn-close-modal"><em>취소</em></button>
-              <button type="button" class="btn-green"><em>확인</em></button>
+              <button type="button" class="btn-green confirm">
+                <em>확인</em>
+              </button>
             </div>
           </div>
         </div>

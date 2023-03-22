@@ -418,10 +418,6 @@ textarea {
 
       dt {
         width: 135px;
-
-        @include _bp(1680px) {
-          width: 95px;
-        }
       }
     }
   }
@@ -717,10 +713,6 @@ textarea {
           background-color: #3b3d3c;
           font-size: 1.4rem;
           text-align: center;
-
-          @include _bp(1680px) {
-            width: 95px;
-          }
         }
 
         dd {

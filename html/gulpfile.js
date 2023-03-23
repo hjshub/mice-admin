@@ -81,13 +81,11 @@ const Js_library = () => {
 
 const Js_common = () => {
   // 작업용 JS 묶음
-  return (
-    src(`${path.assets.js}*.js`)
-      .pipe(concat('common.js'))
-      //.pipe(uglify())
-      .pipe(dest(destPath.assets.js))
-      .pipe(browserSync.reload({ stream: true }))
-  );
+  return src(`${path.assets.js}*.js`)
+    .pipe(concat('common.js'))
+    .pipe(uglify())
+    .pipe(dest(destPath.assets.js))
+    .pipe(browserSync.reload({ stream: true }));
 };
 
 /**

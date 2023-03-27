@@ -345,9 +345,11 @@ textarea {
 }
 
 .filter-wrap {
-  span {
+  > * {
+    display: inline-block;
     vertical-align: middle;
-    & + span {
+
+    & + * {
       margin-left: 10px;
     }
   }

@@ -7,11 +7,9 @@ $input_height: 40px !default;
 $input_height_small: 36px !default;
 $dropdown_padding: 18px !default;
 
-$gray_dark: #444 !default;
 $gray: #999 !default;
 $gray_light: #e8e8e8 !default;
 $gray_lighter: #f6f6f6 !default;
-$primary_light: $gray !default;
 $arrow_color: $gray !default;
 
 // Style the dropdown
@@ -96,6 +94,7 @@ $arrow_color: $gray !default;
   &.wide {
     width: 100%;
   }
+
   &.right {
     float: right;
     .list {
@@ -103,6 +102,7 @@ $arrow_color: $gray !default;
       right: 0;
     }
   }
+
   &.small {
     font-size: $font_size_small;
     height: $input_height_small;
@@ -114,6 +114,66 @@ $arrow_color: $gray !default;
     .option {
       line-height: $input_height_small - 2;
       min-height: $input_height_small - 2;
+    }
+  }
+
+  &.type-02 {
+    min-width: 150px;
+    border-color: $gray3;
+    border-radius: 5px;
+    color: $gray2;
+    font-size: 1.4rem;
+
+    &.sm {
+      min-width: 100px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-color: $white;
+      box-shadow: none;
+
+      .current {
+        color: $white;
+      }
+
+      &::after {
+        @include icon-arrow-down;
+      }
+    }
+
+    &::after {
+      @include icon-arrow-down-gr;
+    }
+
+    &.open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &::after {
+        @include icon-arrow-up;
+      }
+    }
+
+    .list {
+      box-shadow: none;
+      border-color: $white;
+    }
+
+    .current {
+      vertical-align: baseline;
+    }
+
+    .option {
+      &:hover,
+      &.focus,
+      &.selected.focus {
+        color: $white;
+      }
+      &.selected {
+        font-weight: 600;
+      }
     }
   }
 

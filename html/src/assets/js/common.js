@@ -187,7 +187,7 @@ gb.CommonFunction = (function () {
     $(t).closest('.list-item').removeClass('disabled');
   };
   const niceSelect = () => {
-    $('.select-wrap:not(.default) select').niceSelect();
+    $('.select-wrap select').niceSelect();
   };
   const showInput = () => {
     const input = document.querySelectorAll('.input');
